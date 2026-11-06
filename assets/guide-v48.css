@@ -1,0 +1,6 @@
+/* V48: make the one-click guide-to-request handoff unmistakable and privacy-conscious. */
+.planner a[data-v48-guide-handoff]{background:#ffb17b;color:#151c20;border:2px solid #ffb17b;font-size:14px;min-height:58px;box-shadow:0 5px 0 #a34b21;letter-spacing:-.015em}
+.planner a[data-v48-guide-handoff]:hover{background:#f77a32}
+.v48-guide-privacy{margin-top:18px;border-left:3px solid #ff9b56;padding:9px 12px;background:#2c383b;color:#f3d8c5;font-size:12px;line-height:1.5}
+@media(max-width:680px){.planner a[data-v48-guide-handoff]{font-size:13px;padding:13px 10px}}
+@media print{.v48-guide-privacy{display:none}}
