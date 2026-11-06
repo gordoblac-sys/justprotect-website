@@ -104,12 +104,36 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   html{scroll-behavior:auto}
   .service-card{transition:none}
 }
+
+/* V107 — Original Just Protect branding */
+.jp-brand {
+  display:inline-flex;
+  align-items:center;
+  text-decoration:none;
+  flex-shrink:0;
+}
+.jp-brand img {
+  display:block;
+  width:clamp(155px,19vw,220px);
+  height:auto;
+  max-height:68px;
+  object-fit:contain;
+}
+@media(max-width:600px) {
+  .jp-brand img {width:165px}
+  .nav {gap:14px}
+}
 </style>
 </head>
 <body>
 <header>
 <div class="wrap nav">
-<a class="brand" href="index.html">JUST PROTECT</a>
+<a class="brand jp-brand" href="index.html"
+aria-label="Just Protect LLC — Home">
+<img src="assets/brand-wordmark.webp"
+alt="Just Protect LLC"
+width="220" height="70">
+</a>
 <nav aria-label="Main navigation">
 <a href="#services">Services</a>
 <a href="project-studio.html">Project Studio</a>
