@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: justprotect-website
+    runtime: static
+    buildCommand: echo "Static website ready"
+    staticPublishPath: .
+    autoDeployTrigger: commit

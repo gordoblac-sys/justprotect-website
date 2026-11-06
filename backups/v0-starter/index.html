@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Just Protect LLC | Smart Technology Installation</title>
+  <meta name="description" content="Professional technology installation across Illinois, Indiana, Michigan and Ohio.">
+  <style>
+    :root {
+      --dark: #10151b;
+      --orange: #f47b20;
+      --light: #f5f6f8;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: var(--dark); }
+    header { background: var(--dark); color: white; padding: 24px 6%; }
+    .logo { font-size: 24px; font-weight: 800; }
+    .logo span { color: var(--orange); }
+    .hero { padding: 110px 6%; background: var(--light); }
+    .hero h1 { font-size: clamp(38px, 6vw, 72px); max-width: 850px; margin: 0 0 24px; }
+    .hero p { font-size: 20px; max-width: 640px; line-height: 1.6; }
+    .btn { display: inline-block; background: var(--orange); color: #111; padding: 16px 28px; text-decoration: none; font-weight: bold; border-radius: 6px; }
+    section { padding: 70px 6%; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 20px; }
+    .service { padding: 28px; border: 1px solid #ddd; border-radius: 12px; }
+    footer { background: var(--dark); color: white; padding: 36px 6%; }
+  </style>
+</head>
+<body>
+  <header><div class="logo">JUST <span>PROTECT</span> LLC</div></header>
+  <main>
+    <div class="hero">
+      <h1>Smart Technology. Professionally Installed.</h1>
+      <p>Professional installation for connected homes and businesses across Illinois, Indiana, Michigan, and Ohio.</p>
+      <a class="btn" href="#services">Explore Our Services</a>
+    </div>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services" id="service-list"></div>
+    </section>
+  </main>
+  <footer>Just Protect LLC — Illinois · Indiana · Michigan · Ohio</footer>
+  <script>
+    fetch('./content/site.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Unable to load services');
+        return response.json();
+      })
+      .then(data => {
+        const list = document.getElementById('service-list');
+        data.services.forEach(name => {
+          const card = document.createElement('div');
+          card.className = 'service';
+          const title = document.createElement('h3');
+          title.textContent = name;
+          card.appendChild(title);
+          list.appendChild(card);
+        });
+      })
+      .catch(() => {
+        document.getElementById('service-list').textContent = 'Services are temporarily unavailable.';
+      });
+  </script>
+</body>
+</html>
