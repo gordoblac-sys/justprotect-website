@@ -1,0 +1,36 @@
+/* JUST PROTECT V101 — Homepage refinement */
+
+/* Remove the oversized interactive coverage section */
+#territory,
+#coverage {
+  display: none !important;
+}
+
+/* Reduce excessive section spacing */
+main > section {
+  scroll-margin-top: 90px;
+}
+
+main > section:not(.v35-hero) {
+  padding-top: clamp(40px, 5vw, 75px);
+  padding-bottom: clamp(40px, 5vw, 75px);
+}
+
+/* Make long paragraphs easier to read */
+main p {
+  line-height: 1.65;
+}
+
+/* Keep interactive controls responsive */
+main button,
+main a {
+  touch-action: manipulation;
+}
+
+/* Improve mobile spacing */
+@media (max-width: 680px) {
+  main > section:not(.v35-hero) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
