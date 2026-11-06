@@ -1,0 +1,17 @@
+/* V94: original service desk redesign; tab state preserved. */
+#services .v94-service-theater{border:1px solid #ef6a31;border-radius:12px;overflow:hidden;background:#151b20;box-shadow:0 28px 85px #0b121a38;position:relative}
+#services .v94-service-theater:before{content:"FIELD EDITION / 94";position:absolute;top:0;right:0;background:#f36b35;color:#171b20;font-size:10px;font-weight:900;letter-spacing:.17em;padding:10px 17px;z-index:2}
+#services .v94-service-theater .v39-selector{background:linear-gradient(160deg,#111920,#242d32);color:#f6f2e8;border-right:1px solid #5d6260}
+#services .v94-service-theater .v39-tab{border-radius:0;border-bottom:1px solid #ffffff28;transition:background .2s,color .2s,transform .2s}
+#services .v94-service-theater .v39-tab.is-current{background:#f36b35;color:#161b20;transform:translateX(0)}
+#services .v94-service-theater .v39-panel{background:#eee9dc;color:#1a2328}
+#services .v94-service-theater .v39-panel-image{background:#29343a;border-radius:0}
+#services .v94-service-theater .v39-panel-image img{object-fit:cover}
+#services .v94-service-theater .v39-panel-body{background:linear-gradient(150deg,#f6f2e9,#e6e0d3)}
+#services .v94-service-theater .v39-panel-body h3{letter-spacing:-.055em}
+#services .v94-navigator{display:flex;align-items:center;justify-content:space-between;gap:9px;margin:20px 12px 0;padding:10px;border:1px solid #f36b356e;background:#11181d}
+#services .v94-navigator button{background:#f36b35;color:#10171b;border:0;border-radius:3px;padding:12px 10px;font-weight:900;letter-spacing:.05em;cursor:pointer;font-size:11px}
+#services .v94-navigator button:hover,#services .v94-navigator button:focus-visible{background:#fff3e8;outline:2px solid #f36b35;outline-offset:2px}
+#services .v94-navigator span{color:#fff;font-weight:900;font-variant-numeric:tabular-nums;white-space:nowrap;font-size:12px}
+#services .v94-tip{color:#d3d7d4;font-size:12px;line-height:1.55;margin:12px 18px 8px}
+@media(max-width:720px){#services .v94-service-theater:before{font-size:8px;padding:6px}#services .v94-navigator{margin:10px 4px 0}#services .v94-navigator button{padding:10px 6px;font-size:10px}#services .v94-service-theater .v39-selector{border-right:0;border-bottom:2px solid #f36b35}}
