@@ -1,0 +1,27 @@
+/* Compact the location selector without removing state selection */
+.v49-ticket-states,
+.v38-launchpad .v49-ticket-states {
+  padding:12px!important;
+  margin:10px 0!important;
+}
+.v49-state-buttons {
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:7px!important;
+}
+.v49-state-buttons button {
+  min-height:38px!important;
+  padding:8px 12px!important;
+}
+
+/* Keep the Rough-In page easy to discover */
+.jp-rough-in-link {
+  display:inline-flex;
+  margin:12px 0;
+  padding:12px 18px;
+  background:#e87a39;
+  color:#111820!important;
+  border-radius:7px;
+  font-weight:800;
+  text-decoration:none;
+}
