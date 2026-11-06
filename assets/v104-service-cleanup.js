@@ -3,7 +3,7 @@
   'use strict';
 
   const replacement = 'Rough-In Wiring';
-  const oldService = /starlink/ig;
+  const oldService = /roughin/ig;
   const newPage = 'services/rough-in-wiring.html';
 
   function update(root) {
@@ -21,17 +21,17 @@
       // Correct old links without changing other services.
       if (el.hasAttribute('href')) {
         const href = el.getAttribute('href');
-        if (/starlink/i.test(href)) {
+        if (/roughin/i.test(href)) {
           el.setAttribute('href',
-            href.replace(/(?:services\/)?starlink\.html/ig,newPage)
-                .replace(/starlink/ig,'rough-in-wiring'));
+            href.replace(/(?:services\/)?roughin\.html/ig,newPage)
+                .replace(/roughin/ig,'rough-in-wiring'));
         }
       }
 
       for (const attr of ['aria-label','title','alt','placeholder']) {
         const value = el.getAttribute(attr);
         if (value && oldService.test(value)) {
-          el.setAttribute(attr,value.replace(/starlink/ig,replacement));
+          el.setAttribute(attr,value.replace(/roughin/ig,replacement));
         }
         oldService.lastIndex = 0;
       }
@@ -49,9 +49,9 @@
       if (!parent ||
           ['SCRIPT','STYLE','NOSCRIPT'].includes(parent.tagName)) continue;
 
-      if (/starlink/i.test(node.nodeValue)) {
+      if (/roughin/i.test(node.nodeValue)) {
         node.nodeValue =
-          node.nodeValue.replace(/starlink/ig,replacement);
+          node.nodeValue.replace(/roughin/ig,replacement);
       }
     }
   }
@@ -74,9 +74,9 @@
         if (node.nodeType === 1) update(node);
       }
       if (record.type === 'characterData' &&
-          /starlink/i.test(record.target.nodeValue || '')) {
+          /roughin/i.test(record.target.nodeValue || '')) {
         record.target.nodeValue =
-          record.target.nodeValue.replace(/starlink/ig,replacement);
+          record.target.nodeValue.replace(/roughin/ig,replacement);
       }
     }
   });

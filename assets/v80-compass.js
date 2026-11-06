@@ -9,14 +9,14 @@
  if(!dialog||!route||!desc||goalButtons.length!==4||canonical.length!==5)return;
  const catalog={
   tv:{name:'TV & home theater',image:'scene-entertainment.svg',guide:'tv-mounting.html'},
-  starlink:{name:'Starlink installation',image:'scene-connectivity.svg',guide:'starlink.html'},
+  roughin:{name:'rough-in wiring and prewiring',image:'scene-rough-in.svg',guide:'roughin.html'},
   network:{name:'Networking & wiring',image:'scene-network.svg',guide:'networking.html'},
   smart:{name:'Smart home & security',image:'scene-smart.svg',guide:'smart-home-security.html'},
   audio:{name:'Audio & video',image:'scene-audio.svg',guide:'audio-video.html'}
  };
  const routes={
   cinema:{image:'scene-entertainment.svg',keys:['tv','audio']},
-  connected:{image:'scene-connectivity.svg',keys:['starlink','network']},
+  connected:{image:'scene-rough-in.svg',keys:['roughin','network']},
   smart:{image:'scene-smart.svg',keys:['smart','network']},
   sound:{image:'scene-audio.svg',keys:['audio','tv']}
  };

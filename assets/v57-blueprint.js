@@ -6,7 +6,7 @@
  if(!panel||!servicesBox||!document.getElementById('v42-open'))return;
  const catalog={
   tv:{label:'TV & theater',image:'scene-entertainment.svg',eyebrow:'SCREEN / SIGHTLINES',tip:'Screen position, wall conditions and equipment routing.'},
-  starlink:{label:'Starlink',image:'scene-connectivity.svg',eyebrow:'SIGNAL / ACCESS',tip:'Potential mounting areas, access and cable entry.'},
+  roughin:{label:'Rough-In Wiring',image:'scene-rough-in.svg',eyebrow:'SIGNAL / ACCESS',tip:'Potential mounting areas, access and cable entry.'},
   network:{label:'Networking',image:'scene-network.svg',eyebrow:'CABLE / CONNECTION',tip:'Rooms, connection points and equipment locations.'},
   smart:{label:'Smart home / security',image:'scene-smart.svg',eyebrow:'CONTROL / COVERAGE',tip:'Device locations, controls and network needs.'},
   audio:{label:'Audio / video',image:'scene-audio.svg',eyebrow:'SOUND / SPACE',tip:'Listening zones, speaker positions and source equipment.'}

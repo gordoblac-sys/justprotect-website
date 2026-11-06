@@ -4,7 +4,7 @@
  const panel=document.getElementById('wizardContent');
  if(!panel||typeof render!=='function'||typeof data==='undefined')return;
  const validEmail=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||'').trim());
- const names={tv:'TV & theater',starlink:'Starlink',network:'Networking',smart:'Smart home & security',audio:'Audio & video'};
+ const names={tv:'TV & theater',roughin:'Rough-In Wiring',network:'Networking',smart:'Smart home & security',audio:'Audio & video'};
  let contactRevealed=false;
  function selectedServices(){
   const active=[...document.querySelectorAll('[data-v40-service][aria-pressed="true"]')].map(b=>names[b.dataset.v40Service]).filter(Boolean);

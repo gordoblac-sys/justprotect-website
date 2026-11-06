@@ -4,13 +4,13 @@
  if(!panel||typeof render!=='function'||typeof requestText!=='function')return;
  const promptMap={
   'TV Mounting & Home Theater':'TV size, wall type, preferred mounting height and cable visibility',
-  'Starlink Installation':'Equipment version, mounting access, possible obstructions and cable entry',
+  'Rough-In Wiring & Prewiring':'Equipment version, mounting access, possible obstructions and cable entry',
   'Networking & Structured Wiring':'Rooms to connect, device count and preferred equipment location',
   'Smart Home & Security':'Existing devices, entry points and preferred controls',
   'Audio & Video Solutions':'Rooms or zones, speaker locations and existing components'
  };
  function chosen(){
-  const map={tv:'TV Mounting & Home Theater',starlink:'Starlink Installation',network:'Networking & Structured Wiring',smart:'Smart Home & Security',audio:'Audio & Video Solutions'};
+  const map={tv:'TV Mounting & Home Theater',roughin:'Rough-In Wiring & Prewiring',network:'Networking & Structured Wiring',smart:'Smart Home & Security',audio:'Audio & Video Solutions'};
   const active=[...document.querySelectorAll('[data-v40-service][aria-pressed="true"]')].map(b=>map[b.dataset.v40Service]).filter(Boolean);
   return active.length?active:(data.service?[data.service]:[]);
  }

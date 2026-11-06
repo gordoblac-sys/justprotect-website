@@ -10,7 +10,7 @@
  if(picks.length!==5||!prev||!next||!count||!list||!add||lab.length!==5)return;
  const items=[
   {key:'tv',label:'TV & theater',checks:['Viewing height and wall construction','Mounting hardware and equipment','Power and cable routing']},
-  {key:'starlink',label:'Starlink',checks:['Potential sky obstructions','Safe mount and access location','Weatherproof cable entry and router location']},
+  {key:'roughin',label:'Rough-In Wiring',checks:['Potential sky obstructions','Safe mount and access location','Weatherproof cable entry and router location']},
   {key:'network',label:'Networking',checks:['Rooms and wired connection points','Equipment location and power','Cable pathways and wireless coverage']},
   {key:'smart',label:'Smart home',checks:['Priority entry points and devices','Power and network needs','Existing equipment and compatibility']},
   {key:'audio',label:'Audio / video',checks:['Listening zones and speaker positions','Equipment and source locations','Signal and cable pathways']}

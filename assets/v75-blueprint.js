@@ -8,7 +8,7 @@
  const note=document.getElementById('v75-room-note'),chips=document.getElementById('v75-scope-chips'),counter=document.getElementById('v75-scope-count');
  const next=document.getElementById('v75-live-next'),state=document.getElementById('v40-state'),map=document.getElementById('v75-enlarge'),toMap=document.getElementById('v75-to-map');
  const canvas=root.querySelector('.v40-canvas');
- const names={tv:'TV & theater',starlink:'Starlink',network:'Networking',smart:'Smart home',audio:'Audio / video'};
+ const names={tv:'TV & theater',roughin:'Rough-In Wiring',network:'Networking',smart:'Smart home',audio:'Audio / video'};
  const roomCopy={living:'Living room concept · Consider viewing angles, accessible power, and discreet cable routes.',office:'Office / studio concept · Think about workstations, equipment power, and future network capacity.',property:'Whole-property concept · Consider building access, cable entry points, and exterior mounting restrictions.'};
  const arts={
  living:'<path d="M12 40h76M17 32h66v15H17zM25 22h50v10H25zM21 49v8m58-8v8"/>',

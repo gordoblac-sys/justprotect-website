@@ -4,7 +4,7 @@
  const root=document.querySelector('.v49-ticket');if(!root)return;
  const lab=[...document.querySelectorAll('[data-v40-service]')];
  const state=document.getElementById('v42-state'),heroState=document.getElementById('v38-state'),heroService=document.getElementById('v38-service');
- const names={tv:'TV Mounting & Home Theater',starlink:'Starlink Installation',network:'Networking & Structured Wiring',smart:'Smart Home & Security',audio:'Audio & Video Solutions'};
+ const names={tv:'TV Mounting & Home Theater',roughin:'Rough-In Wiring & Prewiring',network:'Networking & Structured Wiring',smart:'Smart Home & Security',audio:'Audio & Video Solutions'};
  const pairButtons=[...root.querySelectorAll('[data-v52-pair]')];
  const serviceButton=root.querySelector('#v52-route-service'),stateButton=root.querySelector('#v52-route-state'),reviewButton=root.querySelector('#v52-route-review');
  const serviceStatus=root.querySelector('#v52-route-service-status'),stateStatus=root.querySelector('#v52-route-state-status'),reviewStatus=root.querySelector('#v52-route-review-status');

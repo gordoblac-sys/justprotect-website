@@ -4,7 +4,7 @@ const tabs=[...root.querySelectorAll('[data-v45-index]')], buttons=[...root.quer
 const note=root.querySelector('#v98-lens-note'),counter=root.querySelector('#v98-lens-count'),guide=root.querySelector('#v98-lens-guide');
 const details=[
 ['Check viewing distance, wall construction and the placement of the display.','Confirm power access, cable concealment and connections to nearby equipment.','Consider remote access, glare and how the room is used every day.'],
-['Check where the dish can be positioned and how the installation area can be reached.','Plan a protected cable route and a practical location for network equipment.','Consider where connected devices need reliable access indoors.'],
+['Check where the cable pathway can be positioned and how the installation area can be reached.','Plan a protected cable route and a practical location for network equipment.','Consider where connected devices need reliable access indoors.'],
 ['Identify the equipment location and the areas that need network coverage.','Consider cable pathways, wall penetrations and future network expansion.','Plan around everyday devices, workspaces and shared connectivity.'],
 ['Consider device placement, access and the spaces that need monitoring.','Plan power and connection requirements for each proposed device.','Consider who needs access, notifications and convenient controls.'],
 ['Check listening positions, room layout and suitable speaker locations.','Consider cable routes, amplifier placement and available power.','Plan controls and volume zones around how the space is used.'],

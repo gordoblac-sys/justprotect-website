@@ -17,7 +17,7 @@
    {art:'scene-network.svg',prompts:['Where are current wiring and network equipment?','Are site access, safety or building rules involved?','Which devices or teams need coordination?']},
    {art:'scene-smart.svg',prompts:['Who should review system operation?','What equipment or access details should be documented?','Which staff need basic usage instructions?']}]
  };
- const guideMap={tv:['services/tv-mounting.html','TV & THEATER GUIDE'],starlink:['services/starlink.html','STARLINK GUIDE'],network:['services/networking.html','NETWORKING GUIDE'],smart:['services/smart-home-security.html','SMART HOME GUIDE'],audio:['services/audio-video.html','AUDIO / VIDEO GUIDE']};
+ const guideMap={tv:['services/tv-mounting.html','TV & THEATER GUIDE'],roughin:['services/rough-in-wiring.html','ROUGH-IN WIRING GUIDE'],network:['services/networking.html','NETWORKING GUIDE'],smart:['services/smart-home-security.html','SMART HOME GUIDE'],audio:['services/audio-video.html','AUDIO / VIDEO GUIDE']};
  let active=0;
  const currentType=()=>types.find(b=>b.getAttribute('aria-pressed')==='true')?.dataset.v29Type||'home';
  const selected=()=>originals.filter(b=>b.getAttribute('aria-pressed')==='true').map(b=>b.dataset.v40Service);

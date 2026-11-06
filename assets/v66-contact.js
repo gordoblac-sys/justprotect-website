@@ -9,7 +9,7 @@
  if(picks.length!==5||!image||!review)return;
  const catalog=[
   {key:'tv',title:'TV & theater',image:'scene-entertainment.svg',guide:'tv-mounting.html',question:'Where will the screen go, and what cable route works for your room?'},
-  {key:'starlink',title:'Starlink',image:'scene-connectivity.svg',guide:'starlink.html',question:'What mounting location, sky visibility and cable entry should we discuss?'},
+  {key:'roughin',title:'Rough-In Wiring',image:'scene-rough-in.svg',guide:'roughin.html',question:'What mounting location, sky visibility and cable entry should we discuss?'},
   {key:'network',title:'Networking & wiring',image:'scene-network.svg',guide:'networking.html',question:'Which rooms need connections, and where will your network equipment live?'},
   {key:'smart',title:'Smart home & security',image:'scene-smart.svg',guide:'smart-home-security.html',question:'Which devices, entry points and existing systems should work together?'},
   {key:'audio',title:'Audio / video',image:'scene-audio.svg',guide:'audio-video.html',question:'Where should sound be heard, and how should speakers and cables be placed?'}
@@ -29,7 +29,7 @@
   });
  });
  const lab=[...document.querySelectorAll('[data-v40-service]')];const state=document.getElementById('v42-state');
- const labels={tv:'TV & theater',starlink:'Starlink',network:'Networking',smart:'Smart home',audio:'Audio / video'};
+ const labels={tv:'TV & theater',roughin:'Rough-In Wiring',network:'Networking',smart:'Smart home',audio:'Audio / video'};
  function sync(){const keys=lab.filter(button=>button.getAttribute('aria-pressed')==='true').map(button=>button.dataset.v40Service);
   const where=state?.value||document.getElementById('v40-state')?.value||'';
   const count=keys.length;

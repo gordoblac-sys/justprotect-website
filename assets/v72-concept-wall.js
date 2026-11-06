@@ -6,7 +6,7 @@
  const tabs=[...root.querySelectorAll('[data-v45-index]')];if(tabs.length!==6)return;
  const catalog=[
   {keys:['tv'],guide:'services/tv-mounting.html',label:'TV INSTALLATION GUIDE'},
-  {keys:['starlink'],guide:'services/starlink.html',label:'STARLINK INSTALLATION GUIDE'},
+  {keys:['roughin'],guide:'services/rough-in-wiring.html',label:'ROUGH-IN WIRING & PREWIRING GUIDE'},
   {keys:['network'],guide:'services/networking.html',label:'NETWORKING GUIDE'},
   {keys:['smart'],guide:'services/smart-home-security.html',label:'SMART HOME GUIDE'},
   {keys:['audio'],guide:'services/audio-video.html',label:'AUDIO & VIDEO GUIDE'},

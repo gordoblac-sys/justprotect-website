@@ -14,23 +14,23 @@
 
       if (el.hasAttribute('href')) {
         const href = el.getAttribute('href');
-        if (/starlink/i.test(href)) {
+        if (/roughin/i.test(href)) {
           el.setAttribute(
             'href',
-            href.replace(/(?:services\/)?starlink\.html/ig,
+            href.replace(/(?:services\/)?roughin\.html/ig,
               match => match.startsWith('services/')
                 ? 'services/rough-in-wiring.html'
                 : 'rough-in-wiring.html')
-              .replace(/starlink/ig,'rough-in-wiring')
+              .replace(/roughin/ig,'rough-in-wiring')
           );
         }
       }
 
       for (const attr of ['aria-label','title','alt']) {
         const value = el.getAttribute(attr);
-        if (value && /starlink/i.test(value)) {
+        if (value && /roughin/i.test(value)) {
           el.setAttribute(attr,
-            value.replace(/starlink/ig,'Rough-In Wiring'));
+            value.replace(/roughin/ig,'Rough-In Wiring'));
         }
       }
     }
@@ -45,9 +45,9 @@
       if (['SCRIPT','STYLE','NOSCRIPT'].includes(
         node.parentElement?.tagName)) continue;
 
-      if (/starlink/i.test(node.nodeValue)) {
+      if (/roughin/i.test(node.nodeValue)) {
         node.nodeValue = node.nodeValue.replace(
-          /starlink/ig,'Rough-In Wiring'
+          /roughin/ig,'Rough-In Wiring'
         );
       }
     }

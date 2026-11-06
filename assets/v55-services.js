@@ -4,14 +4,14 @@
  if(!panel||typeof render!=='function'||typeof services==='undefined')return;
  const illustrations={
   'TV Mounting & Home Theater':{image:'scene-entertainment.svg',short:'TV / THEATER',heading:'MAKE ROOM.\nFOR THE MOMENT.',mobileHeading:'WATCH.\nBETTER.',description:'Start with screen placement, viewing comfort and a clean cable path.',guide:'services/tv-mounting.html',questions:['Where will the screen be viewed from?','Is there a clear cable and power route?','What equipment needs a home?']},
-  'Starlink Installation':{image:'scene-connectivity.svg',short:'STARLINK',heading:'CONNECT.\nWITH INTENTION.',mobileHeading:'GO.\nONLINE.',description:'Plan equipment placement, exterior access and a thoughtful route inside.',guide:'services/starlink.html',questions:['Where might the dish have a clear view?','How will the cable enter the property?','Where will indoor equipment sit?']},
+  'Rough-In Wiring & Prewiring':{image:'scene-rough-in.svg',short:'ROUGH-IN WIRING',heading:'CONNECT.\nWITH INTENTION.',mobileHeading:'GO.\nONLINE.',description:'Plan equipment placement, exterior access and a thoughtful route inside.',guide:'services/rough-in-wiring.html',questions:['Where might the cable pathway have a clear view?','How will the cable enter the property?','Where will indoor equipment sit?']},
   'Networking & Structured Wiring':{image:'scene-network.svg',short:'NETWORKING',heading:'BUILT TO.\nSTAY CONNECTED.',mobileHeading:'WIRE.\nSMART.',description:'Think through wired coverage, device locations and organized infrastructure.',guide:'services/networking.html',questions:['Which rooms need wired connections?','Where will the network equipment live?','Is there access for cable routing?']},
   'Smart Home & Security':{image:'scene-smart.svg',short:'SMART HOME',heading:'A SMARTER.\nEVERYDAY.',mobileHeading:'LIVE.\nSMART.',description:'Map the devices and controls that fit the way the space is used.',guide:'services/smart-home-security.html',questions:['Which areas matter most?','What devices need reliable connectivity?','Where should controls be accessible?']},
   'Audio & Video Solutions':{image:'scene-audio.svg',short:'AUDIO / VIDEO',heading:'FEEL EVERY.\nDETAIL.',mobileHeading:'SOUND.\nBETTER.',description:'Consider sound, sightlines, equipment and a clean finished look.',guide:'services/audio-video.html',questions:['How will the space be used?','Where should speakers and displays sit?','What cables and equipment need concealing?']}
  };
  const pairs=[
   {label:'Theater + Audio',services:[services[0],services[4]]},
-  {label:'Starlink + Networking',services:[services[1],services[2]]},
+  {label:'Rough-In Wiring + Networking',services:[services[1],services[2]]},
   {label:'Smart Home + Networking',services:[services[3],services[2]]}
  ];
  let focused=services[0],undoSnapshot=null,batching=false;

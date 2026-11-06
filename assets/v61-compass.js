@@ -4,11 +4,11 @@
  const lab=[...document.querySelectorAll('[data-v40-service]')],goalButtons=[...dialog.querySelectorAll('[data-v61-goal]')];
  const goalData={
   cinema:{name:'A better movie night',desc:'Start with the screen and the sound. Confirm wall construction, cable paths and listening positions before planning equipment.',keys:['tv','audio']},
-  connected:{name:'A connected property',desc:'Consider the internet entry point and where wired connections should terminate. Mounting and routing depend on the site.',keys:['starlink','network']},
+  connected:{name:'A connected property',desc:'Consider the internet entry point and where wired connections should terminate. Mounting and routing depend on the site.',keys:['roughin','network']},
   smart:{name:'A smarter everyday space',desc:'Plan device locations, power, network stability and compatibility before choosing controls or cameras.',keys:['smart','network']},
   sound:{name:'Sound, thoughtfully placed',desc:'Consider speaker positions, room use and how audio and video sources will connect.',keys:['audio','tv']}
  };
- const services={tv:'TV & Home Theater',starlink:'Starlink Installation',network:'Networking & Wiring',smart:'Smart Home & Security',audio:'Audio & Video'};
+ const services={tv:'TV & Home Theater',roughin:'Rough-In Wiring & Prewiring',network:'Networking & Wiring',smart:'Smart Home & Security',audio:'Audio & Video'};
  const routeName=document.getElementById('v61-route-name'),routeDesc=document.getElementById('v61-route-desc'),routeServices=document.getElementById('v61-route-services'),routeAdd=document.getElementById('v61-add-route');
  const chips=document.getElementById('v61-chips'),copy=document.getElementById('v61-copy'),status=document.getElementById('v61-copy-status'),state=document.getElementById('v44-state');
  let activeGoal=null;

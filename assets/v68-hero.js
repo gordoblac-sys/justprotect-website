@@ -4,7 +4,7 @@
  const hero=document.querySelector('.v50-hero'),tabs=[...document.querySelectorAll('[data-v35-scene]')];
  if(!hero||tabs.length!==5)return;
  hero.classList.add('v68-hero');
- const catalog={entertainment:{key:'tv',name:'TV & theater'},connectivity:{key:'starlink',name:'Starlink'},smart:{key:'smart',name:'Smart home / security'},network:{key:'network',name:'Networking'},audio:{key:'audio',name:'Audio / video'}};
+ const catalog={entertainment:{key:'tv',name:'TV & theater'},connectivity:{key:'roughin',name:'Rough-In Wiring'},smart:{key:'smart',name:'Smart home / security'},network:{key:'network',name:'Networking'},audio:{key:'audio',name:'Audio / video'}};
  const lab=[...document.querySelectorAll('[data-v40-service]')];
  const current=()=>tabs.find(b=>b.getAttribute('aria-pressed')==='true')?.dataset.v35Scene||'entertainment';
  const selected=()=>lab.filter(b=>b.getAttribute('aria-pressed')==='true').map(b=>b.dataset.v40Service);
@@ -21,7 +21,7 @@
  const status=document.getElementById('v68-pulse-status'),meta=document.getElementById('v68-pulse-meta'),feedback=document.getElementById('v68-share-status');
  function sync(){const keys=selected(),s=state();
   status.textContent=keys.length?`${keys.length} ${keys.length===1?'service':'services'} in your project`:'Your project starts with an idea';
-  meta.textContent=keys.length?`${keys.map(k=>({tv:'TV & theater',starlink:'Starlink',network:'Networking',smart:'Smart home',audio:'Audio / video'}[k]||k)).join(' + ')} · ${s||'Choose a state'}`:'Choose a concept, then add services when you are ready.';
+  meta.textContent=keys.length?`${keys.map(k=>({tv:'TV & theater',roughin:'Rough-In Wiring',network:'Networking',smart:'Smart home',audio:'Audio / video'}[k]||k)).join(' + ')} · ${s||'Choose a state'}`:'Choose a concept, then add services when you are ready.';
  }
  document.getElementById('v68-open-plan').addEventListener('click',()=>document.getElementById('v42-open')?.click());
  function advance(delta){const i=tabs.findIndex(t=>t.dataset.v35Scene===current());const next=tabs[(i+delta+tabs.length)%tabs.length];next.click();next.focus({preventScroll:true});const rail=next.parentElement;if(rail&&rail.scrollWidth>rail.clientWidth)rail.scrollLeft=next.offsetLeft-rail.offsetLeft;}

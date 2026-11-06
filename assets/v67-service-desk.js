@@ -4,7 +4,7 @@
  const root=document.querySelector('.v67-service-desk');if(!root)return;
  const options={
   tv:{label:'TV & theater',full:'TV Mounting & Home Theater',points:['Screen height, viewing distance and seating','Wall material and suitable mounting approach','Power, device placement and concealed cable paths']},
-  starlink:{label:'Starlink',full:'Starlink Installation',points:['Possible sky visibility and dish placement','Exterior entry route and weather protection','Router location, power and interior Wi-Fi needs']},
+  roughin:{label:'Rough-In Wiring',full:'Rough-In Wiring & Prewiring',points:['Possible sky visibility and cable pathway planning','Exterior entry route and weather protection','Router location, power and interior Wi-Fi needs']},
   network:{label:'Networking',full:'Networking & Structured Wiring',points:['Rooms needing wired ports or better Wi-Fi','Equipment location and cable pathways','Future network growth and access requirements']},
   smart:{label:'Smart home',full:'Smart Home & Security',points:['Which spaces and entry points matter most','Existing devices and desired integrations','Power, connectivity and equipment placement']},
   audio:{label:'Audio / video',full:'Audio & Video Solutions',points:['Listening zones and speaker locations','Source devices and equipment organization','Cable concealment and control preferences']}

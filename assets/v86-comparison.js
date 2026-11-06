@@ -3,8 +3,8 @@
 (()=>{'use strict';
 const root=document.getElementById('compare');if(!root)return;
 const $=id=>document.getElementById(id), tabs=[...root.querySelectorAll('[data-v26-tab]')],canon=[...document.querySelectorAll('[data-v40-service]')];
-const art={tv:['scene-entertainment.svg','tv-mounting.html'],starlink:['scene-connectivity.svg','starlink.html'],network:['scene-network.svg','networking.html'],smart:['scene-smart.svg','smart-home-security.html'],av:['scene-audio.svg','audio-video.html']};
-const keys=['tv','starlink','network','smart','av'];let pinned=null;
+const art={tv:['scene-entertainment.svg','tv-mounting.html'],roughin:['scene-rough-in.svg','roughin.html'],network:['scene-network.svg','networking.html'],smart:['scene-smart.svg','smart-home-security.html'],av:['scene-audio.svg','audio-video.html']};
+const keys=['tv','roughin','network','smart','av'];let pinned=null;
 const activeKey=()=>tabs.find(t=>t.getAttribute('aria-selected')==='true')?.dataset.v26Tab||'tv';
 const chosen=key=>canon.some(b=>b.dataset.v40Service===key&&b.getAttribute('aria-pressed')==='true');
 function addOrReview(key){if(chosen(key)){$('v42-open')?.click();$('v86-status').textContent='Opened your original editable project workspace. Nothing was sent.';return;}

@@ -20,7 +20,7 @@
  if(!lab.length||!state||!next||!chips)return;
  const catalog={
   tv:{name:'TV & theater',value:'TV Mounting & Home Theater',guide:'services/tv-mounting.html'},
-  starlink:{name:'Starlink',value:'Starlink Installation',guide:'services/starlink.html'},
+  roughin:{name:'Rough-In Wiring',value:'Rough-In Wiring & Prewiring',guide:'services/rough-in-wiring.html'},
   network:{name:'Networking',value:'Networking & Structured Wiring',guide:'services/networking.html'},
   smart:{name:'Smart home',value:'Smart Home & Security',guide:'services/smart-home-security.html'},
   audio:{name:'Audio / video',value:'Audio & Video Solutions',guide:'services/audio-video.html'}

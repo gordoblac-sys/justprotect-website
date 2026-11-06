@@ -40,7 +40,7 @@
   ['Where does Just Protect install?','Start with the four-state territory. Confirm actual availability for your ZIP and installation.'],
   ['Can I request multiple services together?','Explore how one private project can include multiple installation specialties.'],
   ['Do you provide TV mounting and cable management?','Review wall, outlet and cable-routing considerations for your selected TV service.'],
-  ['What should I know before a Starlink installation?','Consider sky visibility, mounting location and router placement for your selected service.'],
+  ['What should I know before a rough-in wiring and prewiring?','Consider sky visibility, mounting location and router placement for your selected service.'],
   ['Can Just Protect help with home or business networking?','Review wiring, equipment and connection-point planning for your selected service.'],
   ['Does completing the project builder send my request?','Understand the final manual email review before you choose whether to send anything.']
  ];
@@ -49,7 +49,7 @@
   const region=state?.value||document.getElementById('v40-state')?.value||'';
   const validRegion=['Illinois','Indiana','Michigan','Ohio'].includes(region);
   // Recommendation is advisory, based solely on canonical on-page controls; never changes the project.
-  recommended=!validRegion?0:!selected.length?1:selected.includes('starlink')?3:selected.includes('tv')?2:selected.includes('networking')?4:5;
+  recommended=!validRegion?0:!selected.length?1:selected.includes('roughin')?3:selected.includes('tv')?2:selected.includes('networking')?4:5;
   suggestionTitle.textContent=suggestions[recommended][0];suggestionReason.textContent=suggestions[recommended][1];
   suggestionButton.setAttribute('aria-label','Read answer: '+suggestions[recommended][0]);
  }
