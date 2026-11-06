@@ -1,0 +1,39 @@
+{
+  "version": 99,
+  "source_version": 98,
+  "changes": [
+    "original services section architectural redesign",
+    "delegated five-service navigator and keyboard navigation",
+    "contextual notes and guides",
+    "narrow-screen sizing guards"
+  ],
+  "syntax_checked": 57,
+  "internal_refs_checked": 477,
+  "responsive_results": [
+    {
+      "width": 1440,
+      "interactions": "passed",
+      "document_overflow_px": 0,
+      "screenshot": "v99-1440-services-field-guide.png"
+    },
+    {
+      "width": 1024,
+      "interactions": "passed",
+      "document_overflow_px": 0,
+      "screenshot": "v99-1024-services-field-guide.png"
+    },
+    {
+      "width": 390,
+      "interactions": "passed",
+      "document_overflow_px": 0,
+      "screenshot": "v99-390-services-field-guide.png"
+    },
+    {
+      "width": 320,
+      "interactions": "passed",
+      "document_overflow_px": 0,
+      "screenshot": "v99-320-services-field-guide.png"
+    }
+  ],
+  "deployment": "not deployed"
+}

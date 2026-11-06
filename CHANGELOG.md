@@ -1033,3 +1033,9 @@ Preserved: V40 three-room SVG, five service selectors, multi-service wizard and 
 - Applied a calm, readable light-theme treatment to the existing services area without removing the V99 navigator or canonical project controls.
 - Added a clearly scoped low-voltage Rough-In Wiring & Prewiring service card within the existing services section, including planning applications and existing guide/contact links. No new storage or form.
 - Updated structured service catalog with rough-in wiring; preserved all seven pages and legacy assets.
+
+## V101 — Focused readability and shorter visual rhythm
+- Compact launch console imagery and controls without replacing project-state logic.
+- Improve headings, paragraph rhythm and keyboard focus.
+- Reduce territory section visual weight while preserving all state interactions.
+- Improve mobile service-choice layout and reduced-motion support.

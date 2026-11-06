@@ -1,0 +1,23 @@
+{
+  "version": 97,
+  "based_on": 96,
+  "created_utc": "2026-11-04T03:49:44.133588+00:00",
+  "source_zip_verified": true,
+  "changes": [
+    "Architectural in-place blueprint workshop",
+    "Three keyboard-accessible planning checkpoints",
+    "Read-only live canonical room/service state with contextual actions and local Copy"
+  ],
+  "html_pages": 7,
+  "js_syntax_checked": 54,
+  "references_checked": 471,
+  "chromium_widths": [
+    1440,
+    1024,
+    390,
+    320
+  ],
+  "chromium_mode": "isolated set_content, not full-site navigation",
+  "cross_page_handoff": "static contract only; end-to-end unverified",
+  "deployment": "not deployed"
+}

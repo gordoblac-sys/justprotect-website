@@ -1,0 +1,16 @@
+/* V101: quieter hierarchy without removing any interactive functionality. */
+html{scroll-behavior:smooth} body{overflow-wrap:break-word}
+/* 1. Compact the elaborate launch console while preserving every control. */
+.v38-launchpad.v49-ticket{max-width:1160px;margin-inline:auto;box-shadow:0 12px 35px #17202620!important;border-radius:12px;overflow:hidden}
+.v49-ticket-art{min-height:340px!important}.v49-art-scene{max-height:260px;min-height:180px!important}
+.v49-ticket>.v38-launch-intro{padding-top:20px!important}.v49-ticket-services button{min-height:55px!important}
+/* 2. Calm typography and tighter readable content width. */
+main p,section p{line-height:1.6}main :is(h2,h3){text-wrap:balance}
+.v38-launch-intro h2{font-size:clamp(31px,4vw,52px)!important;line-height:1.07!important}
+/* 3. Make coverage supporting information rather than a giant destination. Keep selectors functional. */
+#territory{padding-block:30px!important}#territory .v65-territory-head{margin-bottom:14px!important}
+#territory .v65-territory-head h2{font-size:clamp(27px,3vw,40px)!important}
+/* 4. Improve focus visibility and motion comfort. */
+:is(a,button,input,select,textarea):focus-visible{outline:3px solid #f08a43!important;outline-offset:3px}
+@media(max-width:730px){.v38-launchpad.v49-ticket{box-shadow:none!important}.v49-ticket-art{min-height:0!important}.v49-art-scene{height:150px!important;min-height:150px!important}.v49-ticket-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v49-ticket-services button{min-height:56px!important;font-size:11px!important}#territory{padding-block:24px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -1,0 +1,12 @@
+{
+  "version": 98,
+  "based_on": 97,
+  "changes": [
+    "Original concept wall visual redesign",
+    "Three service-specific read-only planning lenses",
+    "Live existing-guide handoff"
+  ],
+  "test_report": "TESTING.md",
+  "deploy_status": "Not deployed; email manual only",
+  "created_utc": "2026-11-04T04:46:51.301235+00:00"
+}
