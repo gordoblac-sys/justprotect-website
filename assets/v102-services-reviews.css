@@ -1,0 +1,59 @@
+/* V102 — service priorities and customer reviews */
+
+/* Remove Starlink-specific promotional cards and links */
+a[href*="starlink.html"],
+.v62-menu-card:has(a[href*="starlink.html"]),
+.v44-result[data-v44-item="starlink"],
+[data-v78-preview="starlink"],
+[data-v62-add="starlink"],
+.v61-goal[data-v61-goal="connected"] {
+  display:none!important;
+}
+
+.v102-updates {
+  max-width:1160px;
+  margin:45px auto;
+  padding:25px;
+}
+
+.v102-updates h2 {
+  font-size:clamp(30px,4vw,48px);
+  line-height:1.15;
+}
+
+.v102-updates p {
+  max-width:720px;
+  line-height:1.65;
+}
+
+.v102-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:22px;
+}
+
+.v102-actions a {
+  display:inline-block;
+  padding:14px 20px;
+  border-radius:7px;
+  background:#ef8548;
+  color:#101820;
+  font-weight:800;
+  text-decoration:none;
+}
+
+.v102-actions a.secondary {
+  background:transparent;
+  color:inherit;
+  border:1px solid #888;
+}
+
+.v102-reviews {
+  border-top:1px solid #8885;
+  padding-top:35px;
+}
+
+@media(max-width:680px) {
+  .v102-updates {padding:20px;margin:25px auto}
+}
