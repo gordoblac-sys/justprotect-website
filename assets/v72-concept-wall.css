@@ -1,0 +1,58 @@
+/* V72 / Concept Wall: visual upgrade INSIDE the original V45 Casebook.
+   Original V45 tab IDs, V60 compare, original project and wizard remain untouched. */
+.v72-concept-wall{background:radial-gradient(circle at 88% 5%,#ffdbc0 0%,transparent 30%),#f2e9dc;border-top:12px solid #eb7529;padding-top:clamp(65px,7vw,110px)}
+.v72-concept-wall .v45-head{grid-template-columns:minmax(0,1.3fr) minmax(250px,.65fr);margin-bottom:35px;gap:32px}
+.v72-concept-wall .v45-head h2{font-size:clamp(57px,7.3vw,112px);line-height:.88}
+.v72-concept-wall .v45-head p{border-left:4px solid #f37d2f;padding-left:22px;font-size:15px;color:#484442}
+.v72-concept-wall .v45-layout{grid-template-columns:minmax(320px,360px) minmax(0,1fr);background:#121a1e;border:1px solid #121a1e;box-shadow:16px 18px 0 #ed7e35,0 40px 75px #16191c2a}
+.v72-concept-wall .v45-rail{background:#11191d;padding:0;min-width:0}
+.v72-concept-wall .v45-rail-heading{background:#f28a43;color:#141a1c;padding:18px 21px;font-size:11px}
+.v72-concept-wall .v45-rail-heading span:last-child{color:#202b30}
+.v72-wall-instruction{margin:0;display:flex;justify-content:space-between;padding:17px 18px 12px;font-size:10px;letter-spacing:.14em;font-weight:900;color:#c9c5bf}
+.v72-wall-instruction span{color:#ffae74}
+.v72-concept-wall #v45-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:0 13px 17px;align-content:start}
+.v72-concept-wall .v45-tab{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:0;padding:0;border:1px solid #4a5457;background:#263237;color:#f9f5ed;text-align:left;overflow:hidden;position:relative;box-shadow:0 0 0 1px transparent;transition:border-color .18s,transform .18s,background .18s}
+.v72-concept-wall .v45-tab:hover{background:#34454a;border-color:#ffc08b;transform:translateY(-2px)}
+.v72-concept-wall .v45-tab[aria-selected=true]{background:#f9eee0;color:#182329;border:2px solid #ff8a37;box-shadow:0 0 0 2px #ff8a37}
+.v72-tab-art{position:relative;display:block;width:100%;height:98px;background:radial-gradient(circle at 50% 30%,#6a5144,#1e282c 75%);overflow:hidden}
+.v72-tab-art:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 35px #101b2080;pointer-events:none}
+.v72-tab-art img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .22s}
+.v72-concept-wall .v45-tab:hover .v72-tab-art img,.v72-concept-wall .v45-tab[aria-selected=true] .v72-tab-art img{transform:scale(1.07)}
+.v72-concept-wall .v45-tab .v45-tab-num{position:absolute;top:7px;left:7px;z-index:1;background:#ff9144;color:#152126;font-size:10px;font-weight:950;padding:5px 7px;line-height:1;margin:0}
+.v72-concept-wall .v45-tab-text{display:grid;gap:3px;min-height:53px;padding:9px 10px 11px;align-content:start}
+.v72-concept-wall .v45-tab-text strong{font-size:11px;line-height:1.2;letter-spacing:.045em}
+.v72-concept-wall .v45-tab-text small{font-size:10px;line-height:1.3;color:#bac3c2;font-weight:500}
+.v72-concept-wall .v45-tab[aria-selected=true] .v45-tab-text small{color:#6b625a}
+.v72-concept-wall .v45-tab-arrow{display:none}
+.v72-tab-match{position:absolute;right:6px;top:7px;z-index:2;background:#17242a;color:#fff1dd;font-size:9px;font-weight:900;letter-spacing:.02em;padding:5px 6px;max-width:100px}
+.v72-tab-match[hidden]{display:none}
+.v72-wall-project{padding:18px 19px 22px;margin-top:auto;background:#25333a;border-top:3px solid #f38a3b;color:#fff8ed}
+.v72-project-kicker{font-size:10px;letter-spacing:.13em;color:#ffae74;font-weight:900}
+.v72-wall-project strong{display:block;font-size:19px;letter-spacing:-.035em;margin:8px 0 4px}
+.v72-wall-project p{font-size:11px;line-height:1.5;color:#d4d7d5;margin:0 0 13px;max-width:310px}
+.v72-wall-project button{display:flex;justify-content:space-between;align-items:center;width:100%;border:1px solid #f39a5d;background:transparent;color:#fff5ea;font-size:10px;letter-spacing:.1em;font-weight:900;padding:12px 13px;min-height:43px}
+.v72-wall-project button:hover{background:#f48b3b;color:#182227}
+.v72-concept-wall .v45-rail-footer{display:none}
+.v72-concept-wall .v45-story{background:#eee4d6}
+.v72-concept-wall .v45-stage{height:clamp(390px,38vw,545px);background:radial-gradient(circle at 50% 30%,#5b3c31,#19262a 70%)}
+.v72-concept-wall .v45-stage:after{background:linear-gradient(180deg,#0e1b2385,transparent 25%,transparent 60%,#071115ab)}
+.v72-concept-wall .v45-stage img{filter:saturate(1.05);object-fit:contain}
+.v72-concept-wall .v45-stage-stamp{top:70px;bottom:auto;right:25px;transform:rotate(5deg);background:#f68b40}
+.v72-stage-controls{position:absolute;z-index:3;bottom:20px;left:20px;right:20px;display:flex;align-items:center;justify-content:space-between;gap:9px;pointer-events:none}
+.v72-stage-controls>*{pointer-events:auto}
+.v72-stage-controls button{border:1px solid #ffb47b;background:#131d23e8;color:#fff6e8;font-size:12px;font-weight:900;letter-spacing:.07em;padding:12px 15px;min-height:45px;display:flex;gap:10px;align-items:center}
+.v72-stage-controls button:hover{background:#f38a3b;color:#131c21}
+.v72-stage-controls #v72-stage-position{font-size:12px;letter-spacing:.14em;font-weight:950;background:#f38a3b;color:#151c20;padding:12px 15px;min-width:77px;text-align:center}
+.v72-concept-wall .v45-details{background:#f2e7d8;gap:24px;padding:clamp(24px,3vw,40px)}
+.v72-concept-wall .v45-details h3{font-size:clamp(37px,4.2vw,61px)}
+.v72-concept-wall .v45-actions .v72-guide-link{display:inline-flex;align-items:center;gap:7px;border:1px solid #8c8177;color:#17252b;background:transparent;text-decoration:none;padding:13px 14px;min-height:45px;font-size:11px;font-weight:900;letter-spacing:.03em}
+.v72-concept-wall .v45-actions .v72-guide-link:hover{background:#18252b;color:#fff8ed}
+.v72-concept-wall .v45-tab:focus-visible,.v72-stage-controls button:focus-visible,.v72-wall-project button:focus-visible,.v72-guide-link:focus-visible{outline:3px solid #ffbb76;outline-offset:3px}
+@media(max-width:1020px){.v72-concept-wall .v45-layout{grid-template-columns:minmax(270px,300px) minmax(0,1fr)}.v72-concept-wall .v45-tab-text small{font-size:9px}.v72-tab-art{height:86px}.v72-concept-wall .v45-details{grid-template-columns:1fr}.v72-concept-wall .v45-stage{height:390px}.v72-concept-wall .v45-stage-stamp{top:65px}}
+@media(max-width:720px){.v72-concept-wall .v45-head{display:block}.v72-concept-wall .v45-head p{margin-top:20px}.v72-concept-wall .v45-layout{display:block;box-shadow:7px 10px 0 #ed7e35}.v72-concept-wall .v45-rail{display:block}.v72-concept-wall #v45-tabs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 14px 14px;gap:9px;scrollbar-width:thin;scroll-padding-inline:14px}.v72-concept-wall .v45-tab{flex:0 0 158px;min-width:158px;scroll-snap-align:start}.v72-tab-art{height:92px}.v72-concept-wall .v45-tab-text{min-height:50px}.v72-concept-wall .v45-tab-text small{font-size:10px}.v72-wall-project{padding:13px 16px 15px;display:grid;grid-template-columns:1fr auto;column-gap:10px;align-items:center}.v72-project-kicker,.v72-wall-project strong,.v72-wall-project p{grid-column:1}.v72-wall-project strong{font-size:16px;margin:4px 0}.v72-wall-project p{margin:0;font-size:10px}.v72-wall-project button{grid-column:2;grid-row:1/4;min-width:100px;width:auto;font-size:9px;padding:9px 11px;gap:7px}.v72-concept-wall .v45-stage{height:310px}.v72-concept-wall .v45-stage-stamp{top:auto;bottom:77px;right:13px}.v72-stage-controls{left:12px;right:12px;bottom:12px}.v72-stage-controls button{padding:10px;font-size:11px;min-height:40px}.v72-stage-controls #v72-stage-position{font-size:10px;min-width:61px;padding:12px 8px}.v72-concept-wall .v45-details{padding:22px}.v72-concept-wall .v45-checklist{padding-top:16px}}
+@media(max-width:360px){.v72-concept-wall .v45-head h2{font-size:44px}.v72-concept-wall .v45-tab{flex-basis:144px;min-width:144px}.v72-wall-project{grid-template-columns:1fr}.v72-wall-project button{grid-column:1;grid-row:auto;margin-top:12px}.v72-concept-wall .v45-stage{height:275px}.v72-stage-controls button span{display:none}.v72-stage-controls button{min-width:43px;justify-content:center}.v72-concept-wall .v45-stage-stamp{font-size:9px;bottom:69px}}
+@media(prefers-reduced-motion:reduce){.v72-concept-wall .v45-tab,.v72-tab-art img{transition:none!important;transform:none!important}}
+/* Keep concept navigation out of the persistent V42 bottom-right dock's hit area.
+   On shorter desktop viewports, bottom-right controls would otherwise be obscured. */
+.v72-concept-wall .v72-stage-controls{top:63px;bottom:auto;right:auto;left:20px;justify-content:flex-start}
+@media(max-width:720px){.v72-concept-wall .v72-stage-controls{top:59px;bottom:auto;left:12px;right:auto}}

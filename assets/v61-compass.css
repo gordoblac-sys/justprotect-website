@@ -1,0 +1,31 @@
+/* V61 / PROJECT COMPASS — refreshes the existing V44 Explore overlay, not the homepage. */
+.v44-navigator{background:radial-gradient(circle at 20% 0%,#66361d 0%,#16191a 50%,#0d1011 100%)}
+.v44-frame{width:min(1510px,100%);grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);border:1px solid #af784f;border-radius:18px;box-shadow:0 30px 110px #000c}
+.v44-left{background:#181d1e}.v44-head{background:#111617;padding-top:19px;padding-bottom:19px}.v44-head strong{letter-spacing:.22em}
+.v44-lead{padding-top:24px;padding-bottom:8px;background:linear-gradient(137deg,#f2a05c 0%,#e87932 100%);color:#181c1c}
+.v44-lead .v44-kicker{color:#4e2a1b}.v44-lead h2{font-size:clamp(43px,5.4vw,88px);line-height:.86;letter-spacing:-.09em;margin:15px 0}.v44-lead h2 em{color:#f6eee3}.v44-lead p{color:#32241c;font-weight:650;max-width:530px;font-size:13px;line-height:1.5}
+.v61-pathways{margin-top:19px;padding:16px 0 17px;border-top:1px solid #ae5424}
+.v61-pathway-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.v61-pathway-head strong{font-size:10px;letter-spacing:.1em}.v61-pathway-head span{font-size:9px;letter-spacing:.08em;font-weight:850}
+.v61-pathway-rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.v61-goal{display:flex;flex-direction:column;align-items:flex-start;min-height:94px;text-align:left;padding:12px 9px;background:#242a2b;color:#fff3e6;border:1px solid #272b2a;cursor:pointer;transition:background .2s,border-color .2s}
+.v61-goal>span{font-size:10px;color:#ffaf77;font-weight:900}.v61-goal strong{font-size:13px;letter-spacing:-.025em;margin:9px 0 3px}.v61-goal small{font-size:10px;color:#dfbba2;line-height:1.2}.v61-goal[aria-pressed=true],.v61-goal:hover{background:#f8efe3;color:#171c1c;border-color:#171c1c}.v61-goal[aria-pressed=true] span,.v61-goal[aria-pressed=true] small,.v61-goal:hover span,.v61-goal:hover small{color:#9a4d22}
+.v44-searchrow{padding-top:15px}.v44-searchrow input{background:#f4efe6;border-radius:5px}.v44-results{margin-top:5px;margin-bottom:7px}.v44-result{min-height:56px}.v44-select strong{font-size:clamp(14px,1.45vw,18px)}
+.v44-select[aria-current=true] strong{color:#ffad74}.v44-result:has(.v44-select[aria-current=true]){background:linear-gradient(90deg,#a6542438,transparent)}
+.v44-right{background:#f2ede3}.v44-right-top{background:#252b2b;padding-top:17px;padding-bottom:17px;color:#f9e6d8}.v44-right-top small{color:#ffad72}.v44-right-top span{color:#d4c1b3;font-size:9px}
+.v44-scene{margin:0;aspect-ratio:2.2;border:0;min-height:180px;background:#c5a58e}.v44-scene img{object-fit:cover}.v44-scene::after{left:auto;right:14px;bottom:12px}
+.v44-detail{padding-top:16px;padding-bottom:12px}.v44-detail h3{font-size:clamp(26px,3vw,45px)}.v44-detail p{line-height:1.45}.v44-detail a{margin-top:8px}
+.v61-route{margin:0 30px 12px;padding:15px 18px;background:#202627;color:#f7ede1;border-left:5px solid #f08b40;display:grid;gap:8px}
+.v61-route-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}.v61-route-head span{font-size:9px;letter-spacing:.13em;font-weight:900;color:#f9a56e}.v61-route-head strong{font-size:15px;letter-spacing:-.03em;text-align:right}.v61-route p{font-size:12px;line-height:1.4;margin:0;color:#d2d0c8}.v61-route-services{display:flex;flex-wrap:wrap;gap:6px}.v61-route-services span{font-size:11px;border:1px solid #8e6751;padding:6px 9px;color:#ffe6d1}
+#v61-add-route{width:100%;border:0;background:#f18a3b;color:#1d1917;padding:11px;font-size:12px;font-weight:900;cursor:pointer}
+.v61-route>small{font-size:10px;color:#c3b8ad}.v44-project{padding-top:15px}.v44-project-top strong{font-size:12px}
+.v61-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.v61-chip{border:1px solid #a68166;background:#f8eee0;color:#29231f;padding:7px 9px;display:inline-flex;gap:9px;align-items:center;font-size:11px;font-weight:850;cursor:pointer}.v61-chip span{font-size:16px;color:#a84b1e}.v61-empty-selection{font-size:11px;color:#665b50}
+.v61-export{display:flex;align-items:center;gap:12px;margin-top:9px;flex-wrap:wrap}.v61-export button{border:0;background:transparent;color:#9b4619;font-size:11px;text-decoration:underline;text-underline-offset:3px;font-weight:900;padding:3px 0;cursor:pointer}.v61-export button:disabled{color:#8e867d;cursor:not-allowed}.v61-export span{font-size:10px;color:#365a38;font-weight:800}
+.v44-navigator .v61-goal:focus-visible,.v44-navigator .v61-chip:focus-visible,.v44-navigator #v61-add-route:focus-visible,.v44-navigator #v61-copy:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:1100px){.v61-route{margin-left:20px;margin-right:20px}.v61-goal strong{font-size:12px}.v61-goal small{font-size:9px}}
+@media(max-width:750px){.v44-frame{border-radius:0}.v44-lead{padding:16px}.v44-lead h2{font-size:clamp(42px,10vw,66px)}.v44-lead p{font-size:12px}.v61-pathways{margin-top:12px;padding:10px 0 2px}.v61-pathway-head span{display:none}.v61-pathway-rail{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:8px}.v61-goal{min-width:126px;min-height:82px;scroll-snap-align:start}.v61-goal strong{font-size:12px;margin:5px 0 3px}.v44-right-top{padding:12px 16px}.v44-right-top span{font-size:8px}.v44-scene{aspect-ratio:2.5;min-height:135px}.v61-route{margin:0 16px 12px;padding:12px}.v61-route-head{display:block}.v61-route-head strong{display:block;text-align:left;margin-top:5px}.v44-project{padding-top:12px}}
+@media(max-width:360px){.v61-goal{min-width:114px}.v44-lead h2{font-size:41px}.v44-right-top span{max-width:155px;text-align:right}}
+@media(prefers-reduced-motion:reduce){.v61-goal{transition:none}}
+
+/* Mobile navigation to the existing lower concept/project panel, without duplicating it. */
+.v61-mobile-jump,.v61-mobile-back{display:none}
+#v61-add-route:disabled{background:#c5b3a3;color:#493b32;cursor:default}
+@media(max-width:750px){.v61-mobile-jump{display:block;width:100%;margin-top:7px;padding:10px;background:#191e1e;border:1px solid #171c1d;color:#fff1e5;text-align:center;font-weight:900;font-size:11px}.v61-mobile-back{display:block;background:transparent;border:1px solid #d0a381;color:#f9d1b6;padding:6px 8px;font-size:10px;font-weight:800}.v44-right-top{flex-wrap:wrap}.v44-right-top span{max-width:145px}}

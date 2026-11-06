@@ -1,0 +1,77 @@
+/* V63 / Blueprint Experience: one existing Design Lab redesigned, no new homepage section. */
+#toolkit.v41-studio{background:radial-gradient(ellipse at 80% 5%,#334043 0,transparent 36%),#0d1519;border-top:8px solid #fb8c40;padding-bottom:84px}
+#toolkit .v40-topline{color:#f2aa77;border-color:#536065}
+#toolkit .v40-heading{padding:53px 0 34px;gap:28px}
+#toolkit .v40-heading h2{font-size:clamp(57px,7.3vw,118px);line-height:.88;letter-spacing:-.085em;text-wrap:balance}
+#toolkit .v40-heading h2 em{color:#ff9045}
+#toolkit .v40-heading p{color:#e0d4c8;font-size:clamp(15px,1.4vw,19px);border-left:2px solid #ff9148;padding-left:24px}
+#toolkit .v41-preset-bar{gap:10px;margin-bottom:10px}
+#toolkit .v41-preset-intro{background:#f6e9d7;color:#1b292d;border-radius:8px 0 0 8px}
+#toolkit .v41-preset-intro h3 em{color:#d25c20}
+#toolkit .v41-preset-grid button{border-radius:0;background:linear-gradient(135deg,#283538,#162327);border:1px solid #4d6063;transition:background .15s,transform .15s}
+#toolkit .v41-preset-grid button[aria-pressed="true"]{background:#f18b42;color:#182327;border-color:#ffc38f}
+#toolkit .v40-workbench{border:1px solid #4c6164;grid-template-columns:minmax(305px,.75fr) minmax(0,1.5fr);box-shadow:0 40px 110px #0007}
+#toolkit .v40-controls{background:#172428;border-right:1px solid #526569;padding:30px 25px}
+#toolkit .v40-space-options{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+#toolkit .v40-space-options button{min-height:77px;padding:12px 9px;display:flex;flex-direction:column;align-items:flex-start;font-size:12px;border-radius:6px}
+#toolkit .v40-space-options button[aria-pressed="true"]{background:#ff9b54}
+#toolkit .v40-service-options{grid-template-columns:1fr;gap:7px}
+#toolkit .v40-service-options button{min-height:59px;flex-direction:row;align-items:center;gap:16px;padding:12px 17px;border-radius:6px}
+#toolkit .v40-service-options button b{font-size:11px}
+#toolkit .v40-service-options button span{font-size:14px}
+#toolkit .v40-service-options button i{position:static;margin-left:auto}
+#toolkit .v40-canvas{background:#19282c;color:#f6eee2;min-width:0}
+#toolkit .v40-canvas-top{background:#233237;border-color:#46575c;color:#e0c3ab;padding:20px 25px}
+#toolkit .v40-canvas-top strong{color:#fff1e0;font-size:clamp(15px,1.5vw,20px)}
+#toolkit .v40-canvas-count{color:#ffb47b}
+#toolkit .v40-svg-wrap{padding:0 12px;min-height:320px;background:radial-gradient(ellipse at 50% 50%,#304449 0,#1b2b2e 68%)}
+#toolkit #v40-plan-svg{min-height:300px;max-height:530px}
+#toolkit #v40-plan-svg .v40-marker circle{stroke:#f6d6b9;stroke-width:3}
+#toolkit #v40-plan-svg .v40-marker.is-on circle{fill:#ff9348;stroke:#fff0dc;stroke-width:5}
+#toolkit #v40-plan-svg .v40-marker:not(.is-on) circle{fill:#56686b;stroke:#c6d0ce}
+#toolkit #v40-plan-svg .v40-marker:not(.is-on) text{fill:#f9eee0}
+#toolkit .v40-canvas-corner{color:#d0b9a7;bottom:18px;right:22px}
+#toolkit .v40-canvas-foot{background:#1b292d;border-color:#46575c;color:#d2c4b7;padding:14px 25px}
+#toolkit .v41-scope{background:#223135;color:#f4e9da;border-color:#4b6062}
+#toolkit .v41-scope h3{color:#fff0dd}
+#toolkit .v41-scope li{color:#e1d5c9}
+#toolkit .v40-result{background:#f7e7d3;border-color:#bd7950;grid-template-columns:1fr 1fr;gap:28px}
+#toolkit .v40-result-copy>span{color:#a54c20}
+#toolkit .v40-result-actions button:first-child{background:#e16c2a;border-color:#e16c2a;color:#fff}
+#toolkit .v40-result-actions button:disabled{opacity:.48}
+/* A single stage control toggles hypothetical connections. It never claims a wiring plan. */
+#toolkit .v63-lens{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 23px;background:#101d21;border-bottom:1px solid #46595e}
+#toolkit .v63-lens-intro{display:flex;gap:10px;align-items:center;font-size:10px;letter-spacing:.13em;color:#b5c6c7;font-weight:800}
+#toolkit .v63-lens-intro strong{color:#ffc18e}
+#toolkit .v63-lens-dot{height:9px;width:9px;border-radius:50%;background:#f68b42;box-shadow:0 0 0 5px #f68b4220}
+#toolkit .v63-lens-buttons{display:flex;gap:6px}
+#toolkit .v63-lens-buttons button{background:#24373b;border:1px solid #53676a;color:#d9e4e3;padding:9px 12px;min-height:39px;border-radius:6px;font-size:10px;letter-spacing:.06em;font-weight:850;cursor:pointer}
+#toolkit .v63-lens-buttons button[aria-pressed="true"]{background:#ff984d;color:#1b2427;border-color:#ff984d}
+#toolkit #v63-route-count{border-radius:100px;border:1px solid currentColor;padding:2px 5px;margin-left:3px}
+#toolkit #v63-paths-layer{pointer-events:none}
+#toolkit #v63-paths-layer .v63-route{fill:none;stroke:#ffb878;stroke-width:4;stroke-dasharray:12 9;stroke-linecap:round;opacity:.9}
+#toolkit #v63-paths-layer .v63-route-hub{fill:#ff9b54;stroke:#ffe0bd;stroke-width:4}
+#toolkit #v63-paths-layer .v63-route-ring{fill:none;stroke:#ff9b54;stroke-width:1.8;stroke-dasharray:4 7}
+#toolkit .v63-inspector{background:#f7e9d7;color:#1c2b2d;border-top:5px solid #f58b40;padding:18px 22px 14px}
+#toolkit .v63-inspector-heading{display:flex;justify-content:space-between;gap:10px;font-size:10px;font-weight:900;letter-spacing:.14em;color:#a44e1f}
+#toolkit .v63-focus-nav{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+#toolkit .v63-focus-nav button{flex:1 1 auto;min-width:70px;border:1px solid #bdafa1;background:#e8daca;color:#38484a;padding:10px 7px;border-radius:5px;font-size:11px;font-weight:900;letter-spacing:.06em;cursor:pointer}
+#toolkit .v63-focus-nav button[aria-pressed="true"]{background:#18272a;border-color:#18272a;color:#ffc18c}
+#toolkit .v63-focus-card{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:18px;align-items:stretch}
+#toolkit .v63-focus-art{position:relative;overflow:hidden;background:#d66c2e;border-radius:6px;min-height:185px}
+#toolkit .v63-focus-art img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:1.3}
+#toolkit .v63-focus-art span{position:absolute;bottom:0;left:0;right:0;background:#1b2829e8;color:#f4d8bd;font-size:8px;font-weight:800;letter-spacing:.05em;padding:8px}
+#toolkit .v63-focus-detail{min-width:0;padding:2px 0}
+#toolkit .v63-focus-kicker{font-size:10px;letter-spacing:.13em;color:#a74f20;font-weight:900}
+#toolkit .v63-focus-detail h3{font-size:clamp(20px,2vw,30px);line-height:1;letter-spacing:-.055em;margin:8px 0}
+#toolkit .v63-focus-detail>p{font-size:13px;line-height:1.5;margin:5px 0;color:#3e4b4d}
+#toolkit .v63-room-tip{font-weight:750}
+#toolkit .v63-focus-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
+#toolkit .v63-focus-actions button,#toolkit .v63-focus-actions a{font:inherit;display:inline-flex;align-items:center;justify-content:center;text-align:center;font-size:10px;line-height:1.3;font-weight:900;letter-spacing:.04em;padding:10px 12px;min-height:40px;border:1px solid #253336;border-radius:5px;background:transparent;color:#253336;text-decoration:none;cursor:pointer}
+#toolkit .v63-focus-actions #v63-focus-add{background:#e5722f;color:white;border-color:#e5722f}
+#toolkit .v63-status{margin:12px 0 0;font-size:11px;color:#6a5548;line-height:1.45}
+#toolkit .v63-inspector button:focus-visible,#toolkit .v63-inspector a:focus-visible,#toolkit .v63-lens button:focus-visible{outline:3px solid #ffab6c;outline-offset:3px}
+@media(max-width:1120px){#toolkit .v40-workbench{grid-template-columns:1fr}#toolkit .v40-controls{border-right:0;border-bottom:1px solid #526569}#toolkit .v40-service-options{grid-template-columns:repeat(5,minmax(0,1fr))}#toolkit .v40-service-options button{min-height:78px;flex-direction:column;align-items:flex-start;gap:6px}#toolkit .v40-service-options button i{position:absolute;right:12px;top:9px}#toolkit .v40-space-options button{min-height:60px}#toolkit .v63-focus-card{grid-template-columns:minmax(0,220px) minmax(0,1fr)}}
+@media(max-width:680px){#toolkit .v40-heading{padding:37px 0 25px}#toolkit .v40-heading h2{font-size:clamp(49px,11vw,80px)}#toolkit .v41-preset-intro{border-radius:0}#toolkit .v40-controls{padding:21px 16px}#toolkit .v40-service-options{grid-template-columns:repeat(2,minmax(0,1fr))}#toolkit .v40-service-options button{min-height:69px}#toolkit .v40-canvas-top{padding:17px 15px}#toolkit .v63-lens{padding:11px 13px;flex-wrap:wrap}#toolkit .v63-lens-buttons{width:100%}#toolkit .v63-lens-buttons button{flex:1}#toolkit .v40-svg-wrap{min-height:260px;padding:0 5px}#toolkit #v40-plan-svg{min-height:230px}#toolkit .v63-inspector{padding:16px 12px}#toolkit .v63-focus-card{grid-template-columns:1fr}#toolkit .v63-focus-art{min-height:0;max-height:230px}#toolkit .v63-focus-art img{aspect-ratio:2.5;object-fit:cover}#toolkit .v63-focus-actions button,#toolkit .v63-focus-actions a{flex:1 1 40%}#toolkit .v40-result{grid-template-columns:1fr}}
+@media(max-width:360px){#toolkit .v63-lens-buttons button{font-size:9px;padding:8px 5px}#toolkit .v63-focus-nav button{min-width:51px;font-size:9px;padding:9px 5px}#toolkit .v63-inspector-heading{font-size:9px}#toolkit .v40-space-options button{font-size:10px}}
+@media(prefers-reduced-motion:reduce){#toolkit .v41-preset-grid button{transition:none}}

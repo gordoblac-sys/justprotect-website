@@ -1,0 +1,100 @@
+/* V70 — visual reset of the EXISTING final contact/review stage. */
+#wizard.v53-final #wizardContent{background:#f2e7d8;padding:18px 28px 28px}
+#wizard.v53-final .v53-review-head{margin:-18px -28px 14px;background:#15282b;color:#f6eee3;border:0;border-bottom:5px solid #ef883f;padding:17px 25px}
+#wizard.v53-final .v53-review-head:after{color:#ffffff0a;top:-45px}
+#wizard.v53-final .v53-review-head h3{color:#f9f0e3;font-size:clamp(30px,3vw,44px);margin-bottom:7px}
+#wizard.v53-final .v53-review-head p{color:#e7cbb6}
+#wizard.v53-final .v53-review-kicker{color:#f4a26b}
+#wizard.v53-final .v53-review-tags{margin-top:8px}
+#wizard.v53-final .v53-review-tags span{background:#31484b;padding:5px 8px}
+#wizard .v70-final-checkpoint{border:1px solid #b6a18c;background:#efe3d2;color:#1a2d2f;box-shadow:0 24px 55px #172a2a24;margin:12px 0 15px}
+#wizard .v70-checkpoint-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;padding:25px 28px;background:#1a3033;color:#f7ecdc;border-bottom:5px solid #ee883e}
+#wizard .v70-overline{font-size:10px;letter-spacing:.19em;font-weight:950;color:#ffb882}
+#wizard .v70-checkpoint-heading h3{font-size:clamp(32px,4vw,58px);line-height:.91;letter-spacing:-.075em;font-weight:950;margin:12px 0 10px;color:#fff4e6}
+#wizard .v70-checkpoint-heading h3 em{font-style:normal;color:#fa9b54}
+#wizard .v70-checkpoint-heading p{font-size:12px;line-height:1.55;max-width:470px;color:#e5d5c7;margin:0}
+#wizard .v70-checkpoint-meter{flex:0 0 210px;max-width:210px;border:1px solid #5b7373;background:#263e41;padding:15px;color:#f8e7d8}
+#wizard .v70-checkpoint-meter strong{font-size:11px;letter-spacing:.06em}
+#wizard #v70-ready-progress{height:7px;background:#526569;margin:12px 0 9px;overflow:hidden}
+#wizard #v70-ready-track{display:block;width:0;height:100%;background:#f99c53;transition:width .15s}
+#wizard .v70-checkpoint-meter small{font-size:10px;line-height:1.4;display:block;color:#d5c9bc}
+#wizard .v70-checkpoint-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-width:0}
+#wizard .v70-edit-column,#wizard .v70-review-column{padding:18px 20px 24px;min-width:0}
+#wizard .v70-edit-column{background:#f7efe4;border-right:1px solid #c5af99}
+#wizard .v70-review-column{background:#e9dccb}
+#wizard .v70-column-kicker{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #baa58f;padding:0 0 11px;color:#5a483d;font-size:10px;font-weight:950;letter-spacing:.1em}
+#wizard .v70-column-kicker span:last-child{color:#a65727}
+#wizard .v70-edit-column .v56-contact-studio{display:block;margin:12px 0 13px;box-shadow:none}
+#wizard .v70-edit-column .v56-contact-art{padding:15px 18px;display:grid;grid-template-columns:minmax(0,1fr) 155px;gap:5px 15px}
+#wizard .v70-edit-column .v56-contact-top{grid-column:1/-1}
+#wizard .v70-edit-column .v56-art-grid{grid-column:2;grid-row:2/5;height:105px;margin:0}
+#wizard .v70-edit-column .v56-contact-art h4{font-size:30px;margin:9px 0 0}
+#wizard .v70-edit-column .v56-contact-art>p{font-size:11px;margin:4px 0 8px}
+#wizard .v70-edit-column .v56-contact-meter{padding-top:8px}
+#wizard .v70-edit-column .v56-contact-form{padding:17px 18px}
+#wizard .v70-edit-column .v56-form-fields{gap:9px}
+#wizard .v70-edit-column .v56-form-fields .field input,#wizard .v70-edit-column .v56-form-fields .field textarea{padding:9px 10px}
+#wizard .v70-edit-column .v56-legacy-snapshot{margin:10px 0}
+#wizard .v70-prompts{margin:9px 0;border:1px solid #c8ae96;background:#fff7ea}
+#wizard .v70-prompts>summary{font-size:11px;font-weight:900;padding:12px;cursor:pointer;color:#314447}
+#wizard .v70-prompts .v53-prompts{margin:0;border:0;border-top:1px solid #c8ae96}
+#wizard .v70-summary{background:#fff8ed;border:1px solid #bea58c;margin-top:12px}
+#wizard .v70-summary-head{display:flex;justify-content:space-between;gap:8px;align-items:center;background:#e98a43;color:#1d3032;padding:14px 16px}
+#wizard .v70-summary-head strong{font-size:13px;letter-spacing:.06em}
+#wizard .v70-summary-head span{font-size:9px;font-weight:900}
+#wizard .v70-summary-item{padding:13px 16px;border-bottom:1px solid #d7c4ae}
+#wizard .v70-summary-item>div:first-child{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#wizard .v70-summary-item strong{font-size:11px;letter-spacing:.06em}
+#wizard .v70-number{font-size:10px;color:#a4572e;font-weight:900}
+#wizard .v70-item-status{margin-left:auto;font-size:9px;font-weight:950;color:#ad4d2a}
+#wizard .v70-item-status[data-ready=true]{color:#267259}
+#wizard .v70-summary-item p{font-size:12px;line-height:1.45;color:#344b4b;overflow-wrap:anywhere;margin:10px 0}
+#wizard .v70-summary-item button{background:transparent;border:0;border-bottom:1px solid #945a37;padding:4px 0;color:#8c481f;font-size:11px;font-weight:900;cursor:pointer}
+#wizard .v70-summary-actions{display:flex;flex-wrap:wrap;gap:13px}
+#wizard .v70-guidance{padding:12px 16px;margin:0;background:#243b3e;color:#f6e5d4;font-size:11px;line-height:1.55}
+#wizard .v70-show-draft{width:100%;display:flex;justify-content:space-between;align-items:center;margin:12px 0 0;padding:12px 15px;border:0;background:#ee893f;color:#182c2d;text-align:left;font-size:11px;font-weight:950;cursor:pointer}
+#wizard .v70-show-draft span{font-size:19px}
+#wizard .v70-review-column .v53-send-desk{margin:12px 0 0;padding:16px;background:#fff9ef;border-color:#b9a58e}
+#wizard .v70-review-column .v53-send-desk h4{font-size:24px}
+#wizard .v70-review-column .v53-send-desk pre{max-height:280px}
+#wizard .v70-final-checkpoint :focus-visible{outline:3px solid #f47d2d;outline-offset:3px}
+@media(max-width:800px){
+ #wizard .v70-checkpoint-heading{padding:20px;align-items:start}
+ #wizard .v70-checkpoint-meter{flex-basis:170px}
+ #wizard .v70-checkpoint-grid{grid-template-columns:1fr}
+ #wizard .v70-edit-column{border-right:0;border-bottom:1px solid #c5af99}
+ #wizard .v70-edit-column .v56-contact-studio{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+ #wizard .v70-edit-column .v56-contact-art{display:flex}
+ #wizard .v70-edit-column .v56-art-grid{height:80px;margin:6px -5px}
+}
+@media(max-width:550px){
+ #wizard.v53-final #wizardContent{padding:14px 12px 22px}
+ #wizard.v53-final .v53-review-head{margin:-14px -12px 13px;padding:17px 16px}
+ #wizard .v70-checkpoint-heading{display:block;padding:19px 16px}
+ #wizard .v70-checkpoint-heading h3{font-size:37px}
+ #wizard .v70-checkpoint-meter{max-width:none;margin-top:16px;padding:12px}
+ #wizard .v70-edit-column,#wizard .v70-review-column{padding:13px 12px 17px}
+ #wizard .v70-edit-column .v56-contact-studio{display:block}
+ #wizard .v70-edit-column .v56-contact-art{display:grid;grid-template-columns:1fr}
+ #wizard .v70-edit-column .v56-art-grid{display:none}
+ #wizard .v70-edit-column .v56-contact-form{padding:15px 12px}
+ #wizard .v70-summary-item{padding:12px}
+}
+@media(prefers-reduced-motion:reduce){#wizard #v70-ready-track{transition:none}}
+/* Final step uses the full original wizard width; the old V19 sidebar and V53
+   title repeat information now presented in the checkpoint, so collapse them
+   visually here while leaving their original elements/handlers intact. */
+#wizard.v53-final .v19-layout{grid-template-columns:minmax(0,1fr)}
+#wizard.v53-final .v19-sidebar{display:none}
+#wizard.v53-final #wizardContent{padding:0;background:#efe3d2}
+#wizard.v53-final .v53-review-head{display:none}
+#wizard.v53-final .v70-final-checkpoint{margin:0;border:0;box-shadow:none}
+#wizard.v53-final #wizardTitle{font-size:clamp(32px,3.5vw,48px);margin:9px 0 10px}
+#wizard.v53-final .v43-topnote{padding-top:8px}
+@media(max-width:550px){#wizard.v53-final #wizardTitle{font-size:34px}}
+
+#wizard .v70-envelope{display:grid;grid-template-columns:1fr;gap:0;margin:12px 0 0;border:1px solid #b8a089;background:#fcf5e9}
+#wizard .v70-envelope>div{padding:10px 13px;min-width:0}
+#wizard .v70-envelope>div+div{border-top:1px solid #d5c1ab}
+#wizard .v70-envelope span{display:block;font-size:9px;letter-spacing:.12em;font-weight:950;color:#a35628;margin-bottom:5px}
+#wizard .v70-envelope strong{display:block;font-size:12px;font-weight:850;line-height:1.45;overflow-wrap:anywhere;color:#243d3f}

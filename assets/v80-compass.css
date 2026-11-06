@@ -1,0 +1,71 @@
+/* V80 / COMPASS FIELD DECK — one redesign of the existing V44/V61 Explore overlay.
+   Canonical service selections, the original goal controls, search, preview, add-pair,
+   project state, export and wizard remain owned by their original scripts. */
+#v44-navigator.v44-navigator{background:radial-gradient(circle at 82% 12%,#86502d 0%,#1c282a 38%,#0c1415 85%)}
+#v44-navigator .v44-frame{border-radius:0;border:1px solid #8c6b52;box-shadow:0 28px 100px #000d;grid-template-columns:minmax(0,1fr) minmax(0,1fr);max-width:1510px}
+#v44-navigator .v44-left{background:#112124}
+#v44-navigator .v44-head{background:#101a1c;border-bottom:1px solid #4c5b58}
+#v44-navigator .v44-lead{position:relative;isolation:isolate;background:linear-gradient(135deg,#152c30 0%,#102022 68%,#192829 100%);color:#f7eee2;border-bottom:1px solid #4d645f;padding-bottom:17px;overflow:hidden}
+#v44-navigator .v44-lead:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.27;background:linear-gradient(90deg,transparent 97%,#8da09c 98%) 0 0/48px 48px,linear-gradient(0deg,transparent 97%,#8da09c 98%) 0 0/48px 48px}
+#v44-navigator .v44-lead:after{content:"N  /  04 PATHWAYS";position:absolute;right:22px;top:18px;font-size:9px;font-weight:900;letter-spacing:.19em;color:#a1c1b9}
+#v44-navigator .v44-lead .v44-kicker{color:#f7a56c}
+#v44-navigator .v44-lead h2{font-size:clamp(43px,5vw,82px);line-height:.86;margin:20px 0 15px;letter-spacing:-.09em}
+#v44-navigator .v44-lead h2 em{color:#f2924d}
+#v44-navigator .v44-lead p{color:#c7d3cc;font-size:13px;font-weight:550;max-width:580px}
+#v44-navigator .v61-pathways{border-top:1px solid #52665f;margin-top:20px;padding-top:16px}
+#v44-navigator .v61-pathway-head strong{color:#f8b587}
+#v44-navigator .v61-pathway-head span{color:#bed0c7}
+#v44-navigator .v61-pathway-rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+#v44-navigator .v61-goal{position:relative;isolation:isolate;overflow:hidden;min-height:158px;padding:12px 10px;justify-content:flex-end;border:1px solid #53615a;background:#283a3b;color:#fff2e4;box-shadow:inset 0 -45px 60px #08191bcc}
+#v44-navigator .v61-goal .v80-goal-image{position:absolute;z-index:-2;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.82) brightness(.63);transition:transform .2s ease,filter .2s ease}
+#v44-navigator .v61-goal:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,#101d1ffa 0%,#162729cf 36%,#0e20213b 78%)}
+#v44-navigator .v61-goal>span{position:absolute;top:10px;left:10px;color:#ffc08d;font-size:10px;letter-spacing:.1em}
+#v44-navigator .v61-goal strong{font-size:clamp(13px,1.15vw,17px);line-height:1.05;margin:0 0 6px;max-width:100%;color:#fff8ee}
+#v44-navigator .v61-goal small{font-size:10px;line-height:1.25;color:#ffd1b1}
+#v44-navigator .v61-goal:is(:hover,[aria-pressed=true]){background:#213739;border-color:#f69b59;box-shadow:inset 0 0 0 2px #f69b59}
+#v44-navigator .v61-goal:is(:hover,[aria-pressed=true]) .v80-goal-image{filter:saturate(1.05) brightness(.85);transform:scale(1.06)}
+#v44-navigator .v61-goal[aria-pressed=true]:after{content:"SELECTED";position:absolute;top:8px;right:7px;background:#f4934e;color:#172526;font-size:8px;letter-spacing:.05em;padding:5px 6px;font-weight:950}
+#v44-navigator .v61-goal[aria-pressed=true] :is(span,small),#v44-navigator .v61-goal:hover :is(span,small){color:#ffd4b2}
+#v44-navigator .v44-searchrow{background:#152729;padding-top:17px}
+#v44-navigator .v44-results{background:#152729;margin-top:0}
+#v44-navigator .v44-result:has(.v44-select[aria-current=true]){background:#314143}
+#v44-navigator .v44-left-foot{background:#142326}
+#v44-navigator .v44-right{background:#f2ede3}
+#v44-navigator .v44-right-top{background:#1c2c2e}
+#v44-navigator .v44-scene{aspect-ratio:2.6;min-height:158px;border-bottom:5px solid #ee8b48}
+#v44-navigator .v44-detail{padding-bottom:15px}
+#v44-navigator .v61-route{background:#15292c;border:1px solid #4b6a65;border-left:6px solid #ed8c48;padding:17px 18px;gap:11px;box-shadow:7px 7px 0 #d3c3ae}
+#v44-navigator .v61-route-head{align-items:center}
+#v44-navigator .v61-route-head strong{font-size:clamp(16px,1.6vw,23px);color:#fff3e6}
+#v44-navigator .v61-route>p{font-size:12px;color:#d3dcd4;line-height:1.55}
+#v44-navigator .v61-route:has(.v80-pair-stage:not([hidden])) .v61-route-services{display:none}
+#v44-navigator .v80-pair-stage[hidden]{display:none!important}
+#v44-navigator .v80-pair-stage{display:grid;gap:10px}
+#v44-navigator .v80-pair-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#v44-navigator .v80-pair-top strong{color:#ffb983;font-size:10px;letter-spacing:.11em}
+#v44-navigator .v80-pair-top span{color:#f9f3e7;font-size:13px;font-weight:950;white-space:nowrap}
+#v44-navigator .v80-pair-meter{height:5px;background:#526663;overflow:hidden}
+#v44-navigator .v80-pair-meter span{display:block;width:0;height:100%;background:#ef934e;transition:width .2s ease}
+#v44-navigator .v80-pair-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#v44-navigator .v80-pair-card{min-width:0;background:#f6f0e5;color:#152829;border:1px solid #b5a794;display:grid;grid-template-rows:90px auto;overflow:hidden}
+#v44-navigator .v80-pair-card[data-in-project=true]{border-color:#7cae9d;box-shadow:inset 0 0 0 2px #3c8d74}
+#v44-navigator .v80-pair-art{position:relative;min-width:0;background:#c6d1c8;overflow:hidden}
+#v44-navigator .v80-pair-art img{width:100%;height:100%;object-fit:cover;display:block}
+#v44-navigator .v80-pair-art span{position:absolute;left:8px;bottom:8px;background:#142829;color:#fff4e6;font-size:9px;letter-spacing:.06em;font-weight:900;padding:6px 8px}
+#v44-navigator .v80-pair-card[data-in-project=true] .v80-pair-art span{background:#2c775f}
+#v44-navigator .v80-pair-body{padding:10px 10px 12px;min-width:0;display:grid;gap:8px}
+#v44-navigator .v80-pair-body strong{font-size:clamp(12px,1.2vw,15px);line-height:1.13;letter-spacing:-.025em}
+#v44-navigator .v80-pair-actions{display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+#v44-navigator .v80-pair-actions button,#v44-navigator .v80-pair-actions a{font-size:10px;font-weight:900;letter-spacing:.01em;cursor:pointer;text-decoration:underline;text-underline-offset:3px;color:#a34e1f;padding:3px 0;background:none;border:0}
+#v44-navigator .v80-pair-actions button:hover,#v44-navigator .v80-pair-actions a:hover{color:#152829}
+#v44-navigator .v80-pair-caption{margin:0;color:#b8cbc3;font-size:10px;line-height:1.4}
+#v44-navigator #v61-add-route{font-size:12px;padding:12px 14px}
+#v44-navigator #v61-add-route:disabled{background:#9dc8b3;color:#1c493a}
+#v44-navigator :is(.v80-pair-actions button,.v80-pair-actions a):focus-visible{outline:3px solid #e9803d;outline-offset:3px}
+@media(max-width:1150px){#v44-navigator .v61-pathway-rail{grid-template-columns:repeat(2,minmax(0,1fr))}#v44-navigator .v61-goal{min-height:108px}#v44-navigator .v61-goal strong{font-size:14px}#v44-navigator .v80-pair-card{grid-template-rows:75px auto}}
+@media(max-width:750px){#v44-navigator .v44-frame{display:block;border:0;box-shadow:none}#v44-navigator .v44-lead{padding:19px 16px 14px}#v44-navigator .v44-lead:after{display:none}#v44-navigator .v44-lead h2{font-size:clamp(42px,10vw,64px)}#v44-navigator .v61-pathway-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:9px;padding-bottom:10px}#v44-navigator .v61-goal{flex:0 0 165px;min-height:128px;scroll-snap-align:start}#v44-navigator .v61-goal strong{font-size:15px}#v44-navigator .v44-scene{min-height:140px}#v44-navigator .v61-route{margin:0 16px 12px;padding:13px;box-shadow:4px 4px 0 #d3c3ae}#v44-navigator .v80-pair-card{grid-template-rows:92px auto}#v44-navigator .v80-pair-body strong{font-size:13px}}
+@media(max-width:370px){#v44-navigator .v61-goal{flex-basis:148px}#v44-navigator .v80-pair-card{grid-template-rows:72px auto}#v44-navigator .v80-pair-body{padding:8px}#v44-navigator .v80-pair-actions{gap:5px}#v44-navigator .v80-pair-actions button,#v44-navigator .v80-pair-actions a{font-size:9px}}
+@media(prefers-reduced-motion:reduce){#v44-navigator .v61-goal .v80-goal-image,#v44-navigator .v80-pair-meter span{transition:none}}
+/* Keep the complete illustrated goal selector visible in its scrollable left pane.
+   V61's original compact lead could shrink under the fixed-height overlay. */
+#v44-navigator .v44-lead{flex:0 0 auto}

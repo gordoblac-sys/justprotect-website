@@ -1,0 +1,67 @@
+/* V76: launch console is the ORIGINAL V49/V52 project ticket, redesigned in place.
+   No additional homepage section, state store, form, submission or speculative availability. */
+.v38-launchpad.v49-ticket.v76-launch{grid-template-columns:minmax(290px,.84fr) minmax(0,1.16fr);grid-template-areas:"art intro" "art quick" "art states" "art brief" "art pair" "art route" "art feedback" "art fallback" "art action" "art status" "art share" "art workspace";gap:0 0;background:#f1e7d9;border:1px solid #ad7755;box-shadow:12px 12px 0 #b95420;margin-top:24px;overflow:hidden}
+.v76-launch .v49-ticket-art{background:#0c1518;min-height:100%;border-right:1px solid #3d4442;position:relative;isolation:isolate}
+.v76-launch .v49-ticket-art:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#f8b37d10 1px,transparent 1px),linear-gradient(90deg,#f8b37d10 1px,transparent 1px);background-size:35px 35px;opacity:.45;z-index:-1}
+.v76-launch .v49-art-top{background:#f29043;padding:17px 21px;color:#152024;letter-spacing:.15em}
+.v76-launch .v49-art-scene{flex:0 0 auto;min-height:310px;max-height:none;aspect-ratio:1.18;background:#1d292a;border-bottom:1px solid #76563d}
+.v76-launch .v49-art-scene img{object-fit:cover}
+.v76-launch .v49-art-stamp{font-size:9px;background:#101b1be6;color:#ffbc8c;border:1px solid #a36b48}
+.v76-launch .v49-art-caption{padding:25px 26px 19px;border-top:0}
+.v76-launch .v49-art-caption>span{color:#ffad74}
+.v76-launch .v49-art-caption strong{font-size:clamp(32px,3.1vw,49px);line-height:.99;letter-spacing:-.068em;margin:12px 0}
+.v76-launch .v49-art-caption p{color:#c6cfc9;font-size:13px}
+.v76-art-readiness{margin:auto 25px 27px;padding:18px 17px;background:#203033;border:1px solid #63736e;color:#f8e9d9}
+.v76-art-ready-head{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:9px;letter-spacing:.14em;font-weight:900;color:#f2ac7a}
+.v76-art-ready-head strong{font-size:24px;letter-spacing:-.045em;color:#fff5e9}
+.v76-meter{height:7px;margin:14px 0;background:#53605c;overflow:hidden}
+.v76-meter>span{display:block;width:0;height:100%;background:linear-gradient(90deg,#f1792d,#ffb575);transition:width .2s ease}
+.v76-art-readiness p{font-size:12px;color:#e6e4da;line-height:1.5;margin:0}
+.v76-launch>.v38-launch-intro{padding:27px 27px 17px;background:#f1e7d9}
+.v76-launch .v38-launch-intro>span{font-size:10px;letter-spacing:.16em;color:#9f4518}
+.v76-launch .v38-launch-intro h2{font-size:clamp(40px,4.3vw,67px);line-height:.88;letter-spacing:-.079em;color:#172124;margin:12px 0 15px}
+.v76-launch .v38-launch-intro h2 em{color:#d65f1b}
+.v76-launch .v38-launch-intro p{max-width:420px;color:#555b57;font-size:13px;line-height:1.55}
+.v76-launch .v49-ticket-services{padding:0 27px;gap:6px}
+.v76-launch .v49-ticket-services button{background:#e3d2c1;min-height:77px;padding:12px 9px;border:1px solid #b89c86;font-size:11px;line-height:1.3;transition:background .2s,border-color .2s}
+.v76-launch .v49-ticket-services button span{font-size:11px;color:#9c4b20}
+.v76-launch .v49-ticket-services button:hover{background:#f7dfc9;border-color:#b96532}
+.v76-launch .v49-ticket-services button[aria-pressed=true]{background:#192b2d;color:#fff3e5;border-color:#f08a3e;box-shadow:inset 0 -5px 0 #ef8740}
+.v76-launch .v49-ticket-services button[aria-pressed=true] span{color:#ffae78}
+.v76-launch .v49-ticket-states{padding:17px 27px 0}
+.v76-launch .v49-state-buttons button{min-height:43px;background:#faf3e9;border-color:#c8ac96}
+.v76-launch .v49-state-buttons button[aria-pressed=true]{background:#ef8b44;border-color:#c66a2b}
+.v76-live-brief{grid-area:brief;margin:19px 27px 0;background:#19282b;color:#f6ecdf;border:1px solid #314a4b;padding:18px 19px 16px;min-width:0}
+.v76-brief-top{display:flex;align-items:start;justify-content:space-between;gap:12px}
+.v76-kicker{font-size:9px;color:#ffa96f;letter-spacing:.15em;font-weight:950}
+.v76-brief-top h3{font-size:clamp(19px,2vw,27px);line-height:1.05;letter-spacing:-.05em;margin:8px 0 0;color:#fff0e2}
+.v76-brief-status{font-size:9px;letter-spacing:.07em;white-space:nowrap;color:#ffc69e;border:1px solid #9e6d4c;padding:8px 9px;font-weight:900}
+.v76-brief-status[data-ready="true"]{background:#f39852;color:#152225;border-color:#f39852}
+.v76-brief-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-block:1px solid #55605c;margin:17px 0 11px;padding:14px 0}
+.v76-brief-facts>div{min-width:0}
+.v76-brief-facts span{display:block;color:#c3c8be;font-size:9px;letter-spacing:.13em;font-weight:900;margin-bottom:5px}
+.v76-brief-facts strong{display:block;color:#fff5e9;font-size:22px;letter-spacing:-.045em;line-height:1.25;overflow-wrap:anywhere}
+.v76-brief-facts strong small{font-size:12px;color:#e1b492}
+.v76-brief-chips{display:flex;gap:6px;flex-wrap:wrap;min-height:0}
+.v76-brief-chips button{background:#344a49;border:1px solid #84918a;color:#fff3e6;font-size:10px;padding:7px 9px;cursor:pointer;text-align:left}
+.v76-brief-chips button:hover{border-color:#f2a167;background:#485955}
+.v76-brief-actions{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap;margin-top:13px}
+.v76-brief-actions button,.v76-brief-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 12px;font-size:10px;font-weight:950;letter-spacing:.035em;text-decoration:none;line-height:1.35}
+.v76-brief-actions button{background:#f39349;color:#182326;border:1px solid #f39349;flex:1}
+.v76-brief-actions a{border:1px solid #87958f;color:#f5eadb;flex:1}
+.v76-brief-hint{font-size:11px;line-height:1.5;color:#cfd9d2;margin:12px 0 0}
+.v76-launch .v52-pair{padding:18px 27px 0}
+.v76-launch .v52-route{padding:15px 27px 0}
+.v76-launch .v52-route-feedback{padding:9px 27px 0}
+.v76-launch .v49-select-fallback{margin:11px 27px 0}
+.v76-launch .v38-launch-action{padding:14px 27px 0}
+.v76-launch .v38-launch-action button{background:#f28c41;color:#172326;font-weight:950;min-height:53px}
+.v76-launch .v38-launch-action button:hover{background:#ffb376}
+.v76-launch .v38-launch-status{padding:9px 27px 0}
+.v76-launch .v49-share{margin:14px 27px 0}
+.v76-launch .v49-workspace{margin:4px 27px 24px 0}
+.v76-launch :is(.v76-brief-actions button,.v76-brief-actions a,.v76-brief-chips button):focus-visible{outline:3px solid #ffc390;outline-offset:3px}
+@media(max-width:1120px){.v38-launchpad.v49-ticket.v76-launch{grid-template-columns:minmax(245px,.76fr) minmax(0,1.24fr)}.v76-launch .v49-art-scene{min-height:240px}.v76-launch .v49-ticket-services button{font-size:10px;padding:9px 6px}.v76-live-brief{padding:14px}.v76-brief-top{flex-wrap:wrap}}
+@media(max-width:730px){.v38-launchpad.v49-ticket.v76-launch{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "art" "quick" "states" "brief" "pair" "route" "feedback" "fallback" "action" "status" "share" "workspace";box-shadow:6px 6px 0 #b95420}.v76-launch>.v38-launch-intro{padding:24px 17px 17px}.v76-launch .v38-launch-intro h2{font-size:clamp(42px,10vw,60px)}.v76-launch .v49-ticket-art{display:grid;grid-template-columns:minmax(0,.51fr) minmax(0,.49fr);grid-template-areas:"arttop arttop" "artscene artcaption" "artready artready";min-height:0}.v76-launch .v49-art-top{grid-area:arttop;padding:9px 13px}.v76-launch .v49-art-scene{grid-area:artscene;aspect-ratio:auto;min-height:185px;height:185px;max-height:185px}.v76-launch .v49-art-caption{grid-area:artcaption;border-top:0;border-left:3px solid #f18b43;padding:14px 12px}.v76-launch .v49-art-caption strong{font-size:clamp(20px,5.5vw,29px);line-height:1.04}.v76-launch .v49-art-caption p{font-size:10px}.v76-art-readiness{grid-area:artready;margin:0 12px 13px;padding:12px}.v76-art-ready-head strong{font-size:19px}.v76-launch .v49-ticket-services{padding:15px 12px 0;gap:4px}.v76-launch .v49-ticket-services button{min-height:65px;font-size:9px;padding:8px 5px}.v76-launch .v49-ticket-states{padding:14px 12px 0}.v76-live-brief{margin:16px 12px 0}.v76-launch .v52-pair{padding:13px 12px 0}.v76-launch .v52-route{padding:13px 12px 0}.v76-launch .v52-route-feedback{padding:8px 12px 0}.v76-launch .v49-select-fallback{margin:9px 12px 0}.v76-launch .v38-launch-action{padding:12px 12px 0}.v76-launch .v38-launch-status{padding:7px 12px 0}.v76-launch .v49-share{margin:10px 12px 0}.v76-launch .v49-workspace{margin:0 12px 18px}.v76-brief-top h3{font-size:23px}}
+@media(max-width:360px){.v76-launch .v49-ticket-services{grid-template-columns:repeat(3,minmax(0,1fr))}.v76-launch .v49-art-scene{height:155px;min-height:155px;max-height:155px}.v76-launch .v49-art-caption strong{font-size:19px}.v76-brief-actions{flex-direction:column}.v76-brief-facts strong{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.v76-meter>span,.v76-launch .v49-ticket-services button{transition:none}}

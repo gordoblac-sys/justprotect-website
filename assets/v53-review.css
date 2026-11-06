@@ -1,0 +1,35 @@
+/* V53: Final-step review desk. Replaces the redundant V18 final-step send box. */
+#wizard .v53-review-head{background:#ec853d;color:#18282b;border:1px solid #d66b25;padding:23px 24px 21px;margin:-29px -35px 25px;position:relative;overflow:hidden}
+#wizard .v53-review-head:after{content:'03';position:absolute;right:8px;top:-27px;font-weight:950;font-size:155px;line-height:1;letter-spacing:-.12em;color:#192b2e13;pointer-events:none}
+#wizard .v53-review-head>*{position:relative;z-index:1}
+#wizard .v53-review-kicker{display:block;font-size:11px;font-weight:950;letter-spacing:.17em;margin-bottom:10px}
+#wizard .v53-review-head h3{font-size:clamp(35px,3.7vw,54px);line-height:.98;letter-spacing:-.065em;margin:0 0 12px;font-weight:950;color:#162a2d}
+#wizard .v53-review-head p{font-size:13px;line-height:1.55;font-weight:650;max-width:420px;margin:0;color:#263536}
+#wizard .v53-review-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
+#wizard .v53-review-tags span{display:inline-flex;align-items:center;gap:5px;background:#1c3033;color:#fff6eb;padding:7px 10px;font-size:10px;font-weight:900;letter-spacing:.02em}
+#wizard .v53-review-tags span:before{content:'✓';color:#ffab6e}
+#wizard .v53-review-jumps{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+#wizard .v53-review-jumps button{border:1px solid #ad9a87;background:#fdf6ea;color:#283d3d;font-size:11px;font-weight:900;padding:10px 13px;cursor:pointer}
+#wizard .v53-review-jumps button:hover{border-color:#e27931;background:#f8dfc8}
+#wizard .v53-prompts{background:#e9dfcf;border-left:4px solid #db7839;padding:12px 15px;margin:8px 0 19px}
+#wizard .v53-prompts h4{margin:0 0 6px;font-size:12px;letter-spacing:.05em;color:#233b3b}
+#wizard .v53-prompts p{font-size:12px;line-height:1.55;margin:0 0 10px;color:#425454}
+#wizard .v53-prompts button{border:1px solid #344e4d;background:#213a3c;color:#fff5e8;font-weight:850;font-size:11px;padding:10px 12px;cursor:pointer}
+#wizard .v53-send-desk{border:1px solid #c6b39c;background:#fff9ed;margin:16px 0 4px;padding:18px 20px 16px;color:#1c3031}
+#wizard .v53-send-desk h4{font-size:20px;letter-spacing:-.04em;line-height:1.1;margin:0 0 6px}
+#wizard .v53-send-desk>p{font-size:12px;line-height:1.6;color:#465d5b;margin:0 0 14px}
+#wizard .v53-send-desk details{border:1px solid #bdab95;background:#f4eadb}
+#wizard .v53-send-desk summary{font-size:12px;font-weight:900;padding:12px 13px;cursor:pointer;list-style-position:inside}
+#wizard .v53-send-desk details[open] summary{border-bottom:1px solid #cbb9a3}
+#wizard .v53-send-desk pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;line-height:1.55;max-height:230px;overflow:auto;padding:12px 14px;margin:0;color:#23383b}
+#wizard .v53-send-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+#wizard .v53-send-actions button{border:1px solid #20383b;background:#21383b;color:#fff8ed;padding:11px 14px;font-size:12px;font-weight:850;cursor:pointer}
+#wizard .v53-send-actions button+button{background:#f9efe1;color:#20383b}
+#wizard .v53-share-status{min-height:19px;margin:10px 0 0!important;color:#3c5954!important;font-size:11px!important}
+#wizard .v53-manual{display:flex;align-items:flex-start;gap:9px;background:#1d3335;color:#f8ecde;padding:12px 14px;margin-top:12px;font-size:11px;line-height:1.5}
+#wizard .v53-manual strong{color:#ffc08c}
+#wizard .v53-review-head :focus-visible,#wizard .v53-review-jumps :focus-visible,#wizard .v53-prompts :focus-visible,#wizard .v53-send-desk :focus-visible{outline:3px solid #17363b;outline-offset:3px}
+@media(max-width:730px){#wizard .v53-review-head{margin:-21px -20px 20px;padding:21px 20px}#wizard .v53-review-head:after{font-size:115px;top:-10px}#wizard .v53-review-head h3{font-size:39px}#wizard .v53-send-desk{padding:15px 14px}#wizard .v53-send-actions button{flex:1 1 130px}}
+@media(max-width:360px){#wizard .v53-review-head h3{font-size:34px}#wizard .v53-review-head{padding:17px 16px}#wizard .v53-review-jumps button{flex:1}}
+/* The final-step desk replaces these older duplicate controls without removing their handlers. */
+#wizard.v53-final #downloadRequest,#wizard.v53-final .v43-editrow{display:none!important}

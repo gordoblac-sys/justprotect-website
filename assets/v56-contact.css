@@ -1,0 +1,45 @@
+/* V56 — editorial Contact Studio. Reorganizes existing fields, not a second form. */
+#wizard .v56-contact-studio{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);margin:16px 0 19px;background:#fff8ec;border:1px solid #baa58c;box-shadow:0 14px 38px #15272910;overflow:hidden;color:#1e3335}
+#wizard .v56-contact-art{background:#1c3033;color:#f7e9d9;padding:22px 22px 24px;display:flex;flex-direction:column;position:relative;overflow:hidden;min-width:0}
+#wizard .v56-contact-top{display:flex;justify-content:space-between;gap:10px;font-size:10px;letter-spacing:.15em;font-weight:950;color:#ffb77e}
+#wizard .v56-contact-top span:last-child{font-size:19px;line-height:1}
+#wizard .v56-art-grid{height:130px;position:relative;margin:13px -12px 10px;background:repeating-linear-gradient(0deg,transparent,transparent 27px,#ffffff0b 28px),repeating-linear-gradient(90deg,transparent,transparent 27px,#ffffff0b 28px);border:1px solid #ffffff12;overflow:hidden}
+#wizard .v56-orbit{position:absolute;display:block;width:168px;height:168px;border:1px solid #f0a56a8f;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-24deg)}
+#wizard .v56-orbit-two{width:115px;height:115px;border-color:#ffffff4d;transform:translate(-50%,-50%) rotate(20deg)}
+#wizard .v56-art-mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:55px;letter-spacing:-.12em;font-weight:950;color:#fff2e1;text-shadow:2px 2px 0 #eb8138}
+#wizard .v56-art-mark span{font-size:19px;color:#ffa75e;vertical-align:top;margin-left:4px}
+#wizard .v56-contact-art h4{font-size:clamp(25px,2.5vw,39px);line-height:.98;letter-spacing:-.07em;font-weight:950;margin:3px 0 13px;color:#fff7ed}
+#wizard .v56-contact-art h4 em{color:#f69a56;font-style:normal}
+#wizard .v56-contact-art>p{font-size:12px;line-height:1.65;color:#e0d0c1;margin:0 0 18px}
+#wizard .v56-contact-meter{margin-top:auto;border-top:1px solid #ffffff3a;padding-top:16px}
+#wizard .v56-meter-label{font-size:10px;font-weight:900;letter-spacing:.1em;color:#ffbd87}
+#wizard .v56-contact-meter strong{float:right;font-size:14px;color:#fff6ea}
+#wizard .v56-meter-track{height:6px;background:#546060;margin:10px 0;overflow:hidden}
+#wizard .v56-meter-track span{display:block;width:0;height:100%;background:#f79c54;transition:width .2s ease}
+#wizard .v56-contact-meter small{font-size:11px;line-height:1.45;color:#e5d4c4;display:block;min-height:32px}
+#wizard .v56-contact-form{padding:21px 21px 19px;min-width:0}
+#wizard .v56-form-head{display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid #d6c8b6;padding-bottom:13px;margin-bottom:16px;font-size:10px;font-weight:950;letter-spacing:.08em}
+#wizard .v56-form-head strong{font-size:9px;color:#9b4c25}
+#wizard .v56-form-fields{display:grid;grid-template-columns:1fr;gap:12px}
+#wizard .v56-form-fields .field{min-width:0;margin:0}
+#wizard .v56-form-fields .field label{font-size:11px;letter-spacing:.02em;font-weight:900;display:block;margin-bottom:6px}
+#wizard .v56-form-fields .field input,#wizard .v56-form-fields .field textarea{background:#fffefa;color:#1b3032;border:1px solid #a9957e;border-radius:0;width:100%;min-width:0;box-sizing:border-box;font-size:14px;padding:11px 12px}
+#wizard .v56-form-fields .field input:focus,#wizard .v56-form-fields .field textarea:focus{border-color:#df7837;outline:2px solid #d87538;outline-offset:1px}
+#wizard .v56-form-fields .v56-phone,#wizard .v56-form-fields .v56-notes{grid-column:1/-1}
+#wizard .v56-form-fields .v56-notes textarea{min-height:82px;resize:vertical}
+#wizard .v56-field-help{display:block;color:#637270;font-size:10px;line-height:1.5;margin-top:5px}
+#wizard .v56-field-ready .v56-field-help{color:#2d6a56}
+#wizard .v56-contact-tools{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0;font-size:10px;color:#576a68}
+#wizard .v56-contact-tools button{font-size:10px;padding:7px 9px;background:#fff5e7;border:1px solid #a98b6d;color:#4a3b30;cursor:pointer}
+#wizard .v56-contact-tools button[hidden]{display:none}
+#wizard .v56-contact-foot{display:flex;align-items:flex-start;gap:8px;background:#f2e5d4;padding:10px 12px;font-size:10px;line-height:1.55;color:#405655}
+#wizard .v56-contact-foot>span:first-child{color:#b96128;font-size:17px;line-height:1}
+#wizard #v56-check-draft{display:block;width:100%;text-align:left;margin-top:11px;background:#1b3336;color:#fff5e9;border:1px solid #1b3336;padding:12px 13px;font-size:11px;font-weight:900;cursor:pointer}
+#wizard #v56-check-draft:hover{background:#345053}
+#wizard .v56-contact-studio :focus-visible,#wizard .v56-legacy-snapshot summary:focus-visible{outline:3px solid #ef863a;outline-offset:3px}
+#wizard .v56-legacy-snapshot{border:1px solid #d0baa3;margin:0 0 16px;background:#f8f0e5}
+#wizard .v56-legacy-snapshot summary{cursor:pointer;font-size:11px;font-weight:900;padding:11px 14px;color:#345052}
+#wizard .v56-legacy-snapshot .v34-preview{margin:0;border:0;box-shadow:none}
+@media(max-width:900px){#wizard .v56-contact-studio{grid-template-columns:1fr}#wizard .v56-contact-art{padding:17px 18px}#wizard .v56-art-grid{height:65px;margin:8px -4px}#wizard .v56-art-mark{font-size:34px}#wizard .v56-orbit{width:100px;height:100px}#wizard .v56-orbit-two{width:65px;height:65px}#wizard .v56-contact-art h4{font-size:30px}#wizard .v56-contact-art>p{margin-bottom:12px}#wizard .v56-contact-meter{margin-top:0;padding-top:10px}#wizard .v56-contact-meter small{min-height:0}#wizard .v56-contact-form{padding:18px}}
+@media(max-width:520px){#wizard .v56-form-fields{grid-template-columns:1fr;gap:11px}#wizard .v56-contact-art h4{font-size:27px}#wizard .v56-form-head{flex-wrap:wrap}#wizard .v56-contact-studio{margin:12px 0}#wizard .v56-contact-tools{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){#wizard .v56-meter-track span{transition:none}}

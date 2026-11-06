@@ -1,0 +1,67 @@
+/* V75 — Blueprint Theater: a reworking of the EXISTING V40/V41 room studio, not a new section. */
+#toolkit.v75-blueprint{background:radial-gradient(ellipse 70% 34% at 85% 1%,#344148 0%,transparent 70%),linear-gradient(180deg,#10191d 0%,#172327 48%,#10191d 100%);border-top:12px solid #f38b43;position:relative;isolation:isolate}
+#toolkit.v75-blueprint::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.17;background-image:linear-gradient(#c2d1d122 1px,transparent 1px),linear-gradient(90deg,#c2d1d122 1px,transparent 1px);background-size:48px 48px}
+#toolkit.v75-blueprint .v40-heading{border-top:1px solid #59646a;padding-top:65px}
+#toolkit.v75-blueprint .v40-heading h2{font-weight:950;letter-spacing:-.087em;line-height:.86;max-width:950px;text-wrap:balance}
+#toolkit.v75-blueprint .v40-heading h2 em{color:#ffa264}
+#toolkit.v75-blueprint .v40-heading p{border-left:3px solid #f38b43;padding-left:22px;color:#cdd6d3;max-width:370px}
+#toolkit.v75-blueprint .v41-preset-bar{grid-template-columns:310px minmax(0,1fr);gap:0;margin-bottom:25px;border:1px solid #627078}
+#toolkit.v75-blueprint .v41-preset-intro{background:#f38b43;padding:28px 30px}
+#toolkit.v75-blueprint .v41-preset-intro h3{font-size:clamp(30px,2.7vw,42px)}
+#toolkit.v75-blueprint .v41-preset-intro h3 em{color:#fff8e8}
+#toolkit.v75-blueprint .v41-preset-grid{background:#18282e;padding:11px;gap:10px}
+#toolkit.v75-blueprint .v41-preset-grid button{background:linear-gradient(145deg,#293d43,#1b2a30);border:1px solid #5a686a;min-height:170px;position:relative;overflow:hidden}
+#toolkit.v75-blueprint .v41-preset-grid button::after{content:"";position:absolute;right:-26px;bottom:-70px;width:150px;height:150px;border:1px solid #8da0a02e;border-radius:50%;box-shadow:0 0 0 22px #8da0a010,0 0 0 45px #8da0a009;pointer-events:none}
+#toolkit.v75-blueprint .v41-preset-grid button[aria-pressed="true"]{background:#f8e9d7;color:#17252a;border-color:#ffb27c}
+#toolkit.v75-blueprint .v40-workbench{grid-template-columns:minmax(320px,.72fr) minmax(0,1.28fr);border:1px solid #68767a;box-shadow:0 45px 90px #0009}
+#toolkit.v75-blueprint .v75-controls{background:#f4eee4;padding:30px 27px 24px}
+#toolkit.v75-blueprint .v40-control-title{color:#a44c20;font-size:12px;font-weight:900;letter-spacing:.08em}
+#toolkit.v75-blueprint .v40-control-title small{color:#536165;font-weight:600}
+#toolkit.v75-blueprint .v40-second{margin-top:27px}
+#toolkit.v75-blueprint .v75-room-choices{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#toolkit.v75-blueprint .v75-room-choices button{min-width:0;min-height:148px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:7px;padding:13px 11px;background:#fffaf2;border:1px solid #c7c5ba;color:#243337;position:relative;overflow:hidden;font-size:12px;font-weight:900;line-height:1.18}
+#toolkit.v75-blueprint .v75-room-choices button[aria-pressed="true"]{background:#26383d;border-color:#26383d;color:#fff9ed;box-shadow:inset 0 0 0 2px #f38b43}
+#toolkit.v75-blueprint .v75-room-choices button>span:not(.v75-room-art){color:#b45b2a;align-self:flex-end}
+#toolkit.v75-blueprint .v75-room-choices button[aria-pressed="true"]>span:not(.v75-room-art){color:#ffa264}
+#toolkit.v75-blueprint .v75-room-art{display:block;width:100%;height:67px;order:-1;align-self:center;flex:none;color:#8b9898}
+#toolkit.v75-blueprint .v75-room-art svg{display:block;width:100%;height:100%}
+#toolkit.v75-blueprint .v75-room-choices button[aria-pressed="true"] .v75-room-art{color:#f8a36b}
+#toolkit.v75-blueprint .v75-room-note{background:#e7e1d6;color:#4b585a;border-left:3px solid #d87537;padding:13px 14px;margin:10px 0 0;font-size:12px;line-height:1.55;min-height:64px}
+#toolkit.v75-blueprint .v40-service-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#toolkit.v75-blueprint .v40-service-options button{min-height:73px;background:#fffaf2;border:1px solid #c7c5ba;border-left:4px solid #8c9a9b;color:#1d3033}
+#toolkit.v75-blueprint .v40-service-options button[aria-pressed="true"]{background:#f38b43;border-color:#d77835;border-left-color:#26383d;color:#18262b}
+#toolkit.v75-blueprint .v40-service-options button:focus-visible,#toolkit.v75-blueprint .v75-room-choices button:focus-visible{outline:3px solid #ed7d37;outline-offset:2px}
+#toolkit.v75-blueprint .v75-scope{background:#203136;color:#f7eee3;margin-top:19px;padding:16px;border:1px solid #536469}
+#toolkit.v75-blueprint .v75-scope-head{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:10px;letter-spacing:.12em;font-weight:900}
+#toolkit.v75-blueprint .v75-scope-head strong{color:#ffae73;margin-left:7px}
+#toolkit.v75-blueprint #v75-to-map{border:1px solid #9ba8a7;color:#f6eee3;background:transparent;padding:10px 11px;cursor:pointer;font:inherit;font-size:10px;white-space:nowrap}
+#toolkit.v75-blueprint .v75-scope-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px;min-height:35px;align-items:center}
+#toolkit.v75-blueprint .v75-scope-chips button{border:1px solid #f38b43;background:#f38b43;color:#1c282c;padding:9px 11px;cursor:pointer;font:inherit;font-weight:850;font-size:11px;display:flex;gap:8px;align-items:center}
+#toolkit.v75-blueprint .v75-scope-chips button span{font-size:15px;line-height:1}
+#toolkit.v75-blueprint .v75-no-services{color:#cbd1d0;font-size:12px;line-height:1.45}
+#toolkit.v75-blueprint .v40-canvas{background:#132126;min-width:0}
+#toolkit.v75-blueprint .v40-canvas-top{background:#203237;color:#d5dcd7;border-bottom:1px solid #526266;gap:16px}
+#toolkit.v75-blueprint .v40-canvas-top strong{color:#fff6e9}
+#toolkit.v75-blueprint .v40-canvas-top>div>span{color:#ffa66d;font-size:10px;letter-spacing:.12em}
+#toolkit.v75-blueprint .v75-map-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap;justify-content:flex-end}
+#toolkit.v75-blueprint .v40-canvas-count{color:#ffae73;white-space:nowrap}
+#toolkit.v75-blueprint #v75-enlarge{border:1px solid #b8c2c0;color:#fff6e9;background:#17282e;padding:11px 13px;font-size:10px;font-weight:900;letter-spacing:.08em;cursor:pointer;min-height:43px}
+#toolkit.v75-blueprint #v75-enlarge:hover,#toolkit.v75-blueprint #v75-to-map:hover{background:#f38b43;color:#19282b;border-color:#f38b43}
+#toolkit.v75-blueprint .v40-svg-wrap{background:radial-gradient(circle at 50% 45%,#304348,#17262c 77%);border-bottom:1px solid #536267}
+#toolkit.v75-blueprint .v40-canvas-foot{background:#203237;color:#d7dddb;border-color:#536267}
+#toolkit.v75-blueprint .v41-scope{background:#19292e}
+#toolkit.v75-blueprint .v40-result{background:#f5e6d2;border:1px solid #c8b4a1;border-top:0}
+#toolkit.v75-blueprint .v40-result-actions button:first-child{background:#e67e3c;border-color:#e67e3c}
+#toolkit.v75-blueprint .v75-live-next{padding:11px 13px;border-left:3px solid #d67536;background:#e6d7c4;color:#293b3e;font-size:12px;line-height:1.4}
+body.v75-map-open{overflow:hidden!important}
+#toolkit.v75-expanded{z-index:99999}
+#toolkit.v75-expanded::before{content:"";position:fixed;inset:0;z-index:99999;background:#080f12df;backdrop-filter:blur(8px)}
+#toolkit.v75-expanded .v40-canvas{position:fixed;z-index:100000;inset:14px 20px;max-height:calc(100dvh - 28px);overflow:auto;box-shadow:0 30px 90px #000c}
+#toolkit.v75-expanded .v40-svg-wrap{min-height:300px;flex:none}
+#toolkit.v75-expanded #v40-plan-svg{height:min(55vh,570px);max-height:none}
+#toolkit.v75-expanded .v40-canvas-top{position:sticky;top:0;z-index:5}
+#toolkit.v75-expanded #v75-enlarge{background:#f38b43;color:#17272c;border-color:#f38b43}
+@media(max-width:1100px){#toolkit.v75-blueprint .v41-preset-bar{grid-template-columns:1fr}#toolkit.v75-blueprint .v40-workbench{grid-template-columns:1fr}#toolkit.v75-blueprint .v75-room-choices{grid-template-columns:repeat(3,minmax(0,1fr))}#toolkit.v75-blueprint .v75-room-choices button{min-height:128px}#toolkit.v75-blueprint .v40-service-options{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:700px){#toolkit.v75-blueprint .v40-heading{padding-top:43px}#toolkit.v75-blueprint .v40-heading h2{font-size:clamp(48px,12vw,77px)}#toolkit.v75-blueprint .v41-preset-bar{margin-bottom:16px}#toolkit.v75-blueprint .v41-preset-grid button{min-height:90px}#toolkit.v75-blueprint .v75-controls{padding:22px 17px}#toolkit.v75-blueprint .v40-service-options{grid-template-columns:repeat(2,minmax(0,1fr))}#toolkit.v75-blueprint .v75-room-choices button{min-height:125px;padding:11px 8px;font-size:11px}#toolkit.v75-blueprint .v75-room-art{height:53px}#toolkit.v75-blueprint .v40-canvas-top{align-items:flex-start;flex-direction:column;padding:18px 16px}#toolkit.v75-blueprint .v75-map-actions{justify-content:space-between;width:100%}#toolkit.v75-expanded .v40-canvas{inset:5px;max-height:calc(100dvh - 10px)}#toolkit.v75-expanded .v40-svg-wrap{min-height:200px}#toolkit.v75-expanded #v40-plan-svg{height:36vh;min-height:200px}}
+@media(max-width:350px){#toolkit.v75-blueprint .v75-room-choices{grid-template-columns:1fr 1fr}#toolkit.v75-blueprint .v75-room-choices button{min-height:118px}#toolkit.v75-blueprint .v75-scope-head{flex-wrap:wrap}#toolkit.v75-blueprint .v75-map-actions{gap:8px}}
+@media(prefers-reduced-motion:reduce){#toolkit.v75-blueprint .v75-room-choices button{transition:none}}

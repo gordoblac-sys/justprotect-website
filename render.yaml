@@ -1,7 +1,8 @@
+# Render Blueprint — static frontend only. No backend deployed.
 services:
   - type: web
     name: justprotect-website
     runtime: static
-    buildCommand: echo "Static website ready"
+    buildCommand: echo "Publishing Just Protect static website"
     staticPublishPath: .
     autoDeployTrigger: commit

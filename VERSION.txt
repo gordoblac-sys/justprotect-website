@@ -1,3 +1,1 @@
-Just Protect LLC
-Target website release: V100
-Migration status: In progress
+Just Protect LLC standalone website — Version 100

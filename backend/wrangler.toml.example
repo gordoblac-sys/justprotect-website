@@ -1,0 +1,8 @@
+name = "justprotect-leads"
+main = "worker.mjs"
+compatibility_date = "2026-10-01"
+# Create a KV namespace and replace below. Never commit API keys.
+[[kv_namespaces]]
+binding = "LEAD_LIMIT_KV"
+id = "REPLACE_WITH_REAL_KV_NAMESPACE_ID"
+# Set ALLOWED_ORIGIN, RESEND_API_KEY, TO_EMAIL, FROM_EMAIL through Wrangler secrets.

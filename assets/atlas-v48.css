@@ -1,0 +1,26 @@
+/* V48: an illustrated live route in the existing V47 hero; no extra homepage sections. */
+.atlas-hero47 .atlas-hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(340px,.88fr);gap:4%;padding-top:45px;padding-bottom:45px}
+.atlas-hero47 .atlas-hero-story{justify-content:flex-start}
+.atlas-hero47 .atlas-hero-story h1{font-size:clamp(68px,7.4vw,118px);margin:18px 0 16px}
+.atlas-hero47 .atlas-hero-story>p{font-size:15px;line-height:1.5;margin:0 0 14px}
+.atlas-hero47 .hero47-down{margin-top:15px}
+.v48-route-card{width:100%;background:#f77a32;color:#192024;margin-top:14px;border:1px solid #ffae72;box-shadow:9px 9px 0 #0005;overflow:hidden}
+.v48-route-top{display:flex;justify-content:space-between;gap:12px;padding:10px 15px;font-size:10px;letter-spacing:.14em;font-weight:900}
+.v48-route-image{position:relative;background:linear-gradient(120deg,#172025,#303c40);height:170px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.v48-route-image:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 34px,#ffffff0a 35px),repeating-linear-gradient(90deg,transparent 0 34px,#ffffff0a 35px);pointer-events:none}
+.v48-route-image img{position:relative;width:min(95%,500px);height:190px;object-fit:contain;filter:drop-shadow(0 8px 14px #0008)}
+.v48-art-label{position:absolute;bottom:7px;right:10px;color:#e8d5c2;font-size:8px;letter-spacing:.1em;font-weight:850}
+.v48-route-bottom{padding:13px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end}
+.v48-route-picks{display:flex;gap:18px;flex-wrap:wrap}.v48-route-picks>div{min-width:130px;max-width:215px;flex:1}.v48-route-picks small{display:block;font-size:9px;font-weight:900;letter-spacing:.08em;margin-bottom:4px}.v48-route-picks strong{font-size:13px;line-height:1.2;display:block}
+.v48-route-start{background:#182124;color:#fff;font-size:12px;font-weight:900;padding:13px 15px;display:inline-flex;gap:10px;align-items:center;justify-content:center;min-height:44px}.v48-route-start:hover{background:#39464b}
+@media(max-width:1040px){.atlas-hero47 .atlas-hero-grid{grid-template-columns:minmax(0,1fr) minmax(310px,.95fr);gap:20px}.atlas-hero47 .atlas-hero-story h1{font-size:clamp(60px,7vw,91px)}.v48-route-bottom{grid-template-columns:1fr}.v48-route-start{justify-self:stretch}.v48-route-image{height:145px}}
+@media(max-width:820px){.atlas-hero47 .atlas-hero-grid{grid-template-columns:1fr;padding-top:34px;padding-bottom:40px}.atlas-hero47 .atlas-hero-story h1{font-size:clamp(65px,12vw,100px)}.v48-route-card{margin:15px 0 10px}.v48-route-bottom{grid-template-columns:minmax(0,1fr) auto}.v48-route-image{height:180px}}
+@media(max-width:480px){.atlas-hero47 .atlas-hero-story h1{font-size:clamp(57px,14vw,73px)}.v48-route-image{height:140px}.v48-route-image img{height:160px}.v48-route-bottom{grid-template-columns:1fr}.v48-route-picks>div{min-width:100px}.v48-route-start{width:100%}.v48-route-top{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.v48-route-card *{animation:none!important;transition:none!important}}
+/* On smaller screens choose a goal first, then immediately see its illustrated plan. */
+@media(max-width:820px){
+ .atlas-hero47 .atlas-hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+ .atlas-hero47 .atlas-goal-card{margin:16px 0 24px}
+ .atlas-hero47 .v48-route-card{margin:0}
+ .atlas-hero47 .hero47-down{align-self:flex-start;margin-top:22px}
+}

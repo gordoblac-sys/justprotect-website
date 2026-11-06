@@ -1,4 +1,4 @@
-/* V94: original service desk redesign; tab state preserved. */
+/* V94: in-place original service desk redesign; original tab/panel state preserved. */
 #services .v94-service-theater{border:1px solid #ef6a31;border-radius:12px;overflow:hidden;background:#151b20;box-shadow:0 28px 85px #0b121a38;position:relative}
 #services .v94-service-theater:before{content:"FIELD EDITION / 94";position:absolute;top:0;right:0;background:#f36b35;color:#171b20;font-size:10px;font-weight:900;letter-spacing:.17em;padding:10px 17px;z-index:2}
 #services .v94-service-theater .v39-selector{background:linear-gradient(160deg,#111920,#242d32);color:#f6f2e8;border-right:1px solid #5d6260}

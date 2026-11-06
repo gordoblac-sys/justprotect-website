@@ -1,0 +1,47 @@
+/* V52 / FAST TRACK — Refine the existing illustrated project ticket, not another section. */
+.v38-launchpad.v49-ticket{grid-template-columns:minmax(220px,.68fr) minmax(0,1.32fr);grid-template-areas:
+ "art intro" "art quick" "art states" "art pair" "art route" "art feedback" "art fallback" "art action" "art status" "art share" "art workspace";
+ gap:0 24px;box-shadow:10px 10px 0 #e87c31;background:#faf3e9;border-color:#354044}
+.v49-ticket-art{min-height:0;background:#152529;border-right:0;position:relative}
+.v49-art-top{background:#ed823c;padding:12px 15px;font-size:9px}
+.v49-art-scene{min-height:185px;max-height:330px;flex:1;background:#223336}
+.v49-art-caption{padding:17px 18px 19px;border-top:3px solid #ee8136}
+.v49-art-caption strong{font-size:clamp(22px,2.6vw,32px);letter-spacing:-.055em}
+.v49-ticket>.v38-launch-intro{padding:19px 20px 11px 0}
+.v49-ticket .v38-launch-intro h2{font-size:clamp(35px,3.8vw,51px);margin:7px 0}
+.v49-ticket .v38-launch-intro p{margin:0;font-size:12px}
+.v49-ticket-services{padding-right:20px;gap:5px}
+.v49-ticket-services button{min-height:61px;padding:8px 7px;font-size:10px;gap:5px}
+.v49-ticket-states{padding:10px 20px 0 0}
+.v49-row-label{margin-bottom:5px}
+.v49-state-buttons button{min-height:38px;padding:8px 3px;font-size:11px}
+.v52-pair{grid-area:pair;padding:13px 20px 0 0}
+.v52-pair-title{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:7px}
+.v52-pair-title span{color:#8c451e;font-weight:950;letter-spacing:.1em;font-size:10px}
+.v52-pair-title small{color:#5c6562;font-size:10px}
+.v52-pair-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.v52-pair-choices button{min-height:41px;padding:7px 8px;border:1px solid #b8a18e;background:#f0e2d3;color:#203033;font-size:10px;font-weight:800;text-align:left;line-height:1.3;cursor:pointer}
+.v52-pair-choices button span{color:#b2541d;font-size:13px;margin-right:4px}
+.v52-pair-choices button:hover{background:#f6d4b8;border-color:#a4552c}
+.v52-pair-choices button[aria-pressed="true"]{background:#23373a;color:#fff;border-color:#f08c43;box-shadow:inset 0 -3px 0 #f08c43}
+.v52-pair-choices button[aria-pressed="true"] span{color:#ffa56c}
+.v52-route{grid-area:route;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:12px 20px 0 0;gap:5px}
+.v52-route button{display:grid;grid-template-columns:25px minmax(0,1fr);column-gap:5px;align-items:center;text-align:left;border:1px solid #c9b7a5;background:#fff9f0;color:#283436;padding:9px 7px;min-height:57px;cursor:pointer}
+.v52-route button>span{grid-row:1/3;font-size:15px;font-weight:950;color:#ae582b}
+.v52-route strong{font-size:10px;letter-spacing:.06em}
+.v52-route small{font-size:9px;color:#6b6962;line-height:1.35}
+.v52-route button[data-complete="true"]{border-color:#29564e;background:#e2ede4}
+.v52-route button[data-complete="true"]>span{color:#17654b}
+.v52-route button:hover{border-color:#e07735}
+.v52-route-feedback{grid-area:feedback;padding:7px 20px 0 0;color:#77502f;font-size:10px;line-height:1.45;margin:0;min-height:20px}
+.v49-ticket .v38-launch-action{padding:10px 20px 0 0}
+.v49-ticket .v38-launch-action button{min-height:46px;padding:10px 13px}
+.v49-ticket .v38-launch-status{padding:5px 20px 0 0}
+.v49-select-fallback{margin:8px 20px 0 0}
+.v49-share{margin:7px 20px 0 0}
+.v49-workspace{margin:0 20px 15px 0}
+.v49-ticket :is(.v52-route button,.v52-pair-choices button):focus-visible{outline:3px solid #d75f18;outline-offset:2px}
+@media(max-width:1100px){.v38-launchpad.v49-ticket{grid-template-columns:minmax(190px,.63fr) minmax(0,1.37fr);gap:0 14px}.v49-ticket-art{min-height:0}.v49-ticket-services button{min-height:61px;font-size:9px}.v52-pair-choices button{font-size:9px}}
+@media(max-width:730px){.v38-launchpad.v49-ticket{grid-template-columns:1fr;grid-template-areas:"intro" "art" "quick" "states" "pair" "route" "feedback" "fallback" "action" "status" "share" "workspace";gap:0;box-shadow:6px 6px 0 #e87c31}.v49-ticket>.v38-launch-intro{padding:17px 16px 11px}.v49-ticket .v38-launch-intro h2{font-size:clamp(34px,8.5vw,49px)}.v49-ticket-art{display:grid;grid-template-columns:minmax(0,.52fr) minmax(0,.48fr);grid-template-areas:"arttop arttop" "artscene artcaption";min-height:0;align-items:stretch}.v49-art-top{grid-area:arttop;padding:7px 12px}.v49-art-scene{grid-area:artscene;height:138px;min-height:138px;max-height:138px}.v49-art-caption{grid-area:artcaption;border-top:0;border-left:3px solid #ee8136;padding:12px 11px}.v49-art-caption strong{font-size:19px;line-height:1.1;margin:6px 0}.v49-art-caption p{font-size:10px;line-height:1.4}.v49-ticket-services{padding:12px 12px 0;gap:4px}.v49-ticket-services button{min-height:61px;font-size:9px}.v49-ticket-states{padding:12px 12px 0}.v49-state-buttons button{font-size:10px}.v52-pair{padding:12px 12px 0}.v52-route{padding:12px 12px 0}.v52-route-feedback{padding:8px 12px 0}.v49-select-fallback{margin:9px 12px 0}.v49-ticket .v38-launch-action{padding:11px 12px 0}.v49-ticket .v38-launch-status{padding:7px 12px 0}.v49-share{margin:8px 12px 0}.v49-workspace{margin:0 12px 16px}}
+@media(max-width:360px){.v49-ticket-services{grid-template-columns:repeat(3,minmax(0,1fr))}.v49-art-scene{height:120px;min-height:120px;max-height:120px}.v49-art-caption strong{font-size:17px}.v52-pair-choices{grid-template-columns:1fr}.v52-pair-choices button{min-height:34px}.v52-route button{grid-template-columns:1fr;min-height:70px}.v52-route button>span{grid-row:auto;font-size:12px}.v52-route strong{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.v52-pair-choices button{transition:none}}

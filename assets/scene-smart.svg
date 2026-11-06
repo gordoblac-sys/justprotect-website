@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" role="img" aria-label="Illustrated modern smart home with connected security camera, door lock and control panel"><defs>
+ <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#0C1721"/><stop offset=".55" stop-color="#23303E"/><stop offset="1" stop-color="#5F493C"/></linearGradient>
+ <linearGradient id="panel" x2=".8" y2="1"><stop stop-color="#343B42"/><stop offset="1" stop-color="#10151B"/></linearGradient>
+ <linearGradient id="orange" x2=".4" y2="1"><stop stop-color="#FFC782"/><stop offset="1" stop-color="#E46E27"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#7897AB"/><stop offset="1" stop-color="#283848"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#FC9B54" stop-opacity=".4"/><stop offset="1" stop-color="#FC9B54" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="soft" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="4"/></filter>
+ <pattern id="wood" width="31" height="200" patternUnits="userSpaceOnUse"><rect width="31" height="200" fill="#3D302C"/><rect x="2" width="19" height="200" fill="#6B4B3A"/><rect x="23" width="2" height="200" fill="#1B1A1B"/></pattern>
+ </defs>
+<rect width="1000" height="900" fill="#1B1E21"/><rect width="1000" height="675" fill="#363A3B"/><path d="M0 660L1000 590V900H0Z" fill="#191F22"/><rect x="50" y="0" width="55" height="650" fill="#4C423B"/><rect x="800" y="0" width="200" height="635" fill="#2A2E32"/>
+<rect x="120" y="105" width="610" height="460" rx="9" fill="#1D2933" stroke="#87949B" stroke-width="11"/><rect x="135" y="120" width="580" height="430" fill="url(#glass)"/><path d="M135 350L380 198L715 374V550H135Z" fill="#233237" opacity=".65"/><path d="M380 200L380 550M135 350L380 200L715 375" stroke="#B7CBD6" stroke-opacity=".2" stroke-width="8" fill="none"/>
+<path d="M35 650H740" stroke="#9F8471" stroke-width="14"/><rect x="115" y="632" width="595" height="102" rx="26" fill="#67564A"/><rect x="130" y="660" width="566" height="87" rx="26" fill="#4B3E36"/><rect x="165" y="730" width="38" height="62" fill="#1C2225"/><rect x="620" y="730" width="38" height="62" fill="#1C2225"/>
+<rect x="814" y="207" width="117" height="187" rx="15" fill="#131B20" stroke="#72828E" stroke-width="7"/><rect x="829" y="234" width="87" height="125" rx="5" fill="#283B48"/><circle cx="872" cy="277" r="28" fill="#D88B53"/><path d="M851 313H894" stroke="#9FBCBA" stroke-width="6"/><circle cx="872" cy="385" r="7" fill="#DCA16E"/>
+<g transform="translate(750 100) rotate(-18)"><rect x="0" y="0" width="147" height="58" rx="24" fill="#C2D0D0"/><circle cx="107" cy="29" r="26" fill="#26313B"/><circle cx="107" cy="29" r="11" fill="#E58C55"/><rect x="22" y="55" width="18" height="47" fill="#D0D4D2"/></g>
+<path d="M798 155Q687 91 555 150M797 168Q702 129 646 184" fill="none" stroke="#FFAA70" stroke-width="4" stroke-dasharray="11 10" opacity=".65"/>
+<rect x="370" y="542" width="108" height="76" rx="13" fill="#171D20" stroke="#7D8C92" stroke-width="5"/><circle cx="426" cy="580" r="18" fill="#F4974F"/><circle cx="426" cy="580" r="6" fill="#22282B"/>
+<path d="M478 584Q610 590 778 335" stroke="#FF9A50" fill="none" stroke-width="4" stroke-dasharray="10 14" opacity=".85"/><circle cx="778" cy="335" r="15" fill="#FF9A50"/>
+<text x="60" y="866" fill="#E9D7C6" font-size="17" font-family="Arial" letter-spacing="4">SMART HOME / CONCEPT 03</text></svg>

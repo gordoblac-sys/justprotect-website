@@ -1,0 +1,27 @@
+/* V98 original Concept Wall in-place editorial redesign */
+#inspiration.v98-concept-studio{background:#f4f0e8;color:#202421;padding-block:clamp(54px,7vw,110px)}
+.v98-concept-studio .shell{max-width:1450px}
+.v98-edition-label{font:700 11px/1.5 system-ui,sans-serif;letter-spacing:.2em;color:#e16a30;margin-bottom:18px}
+.v98-edition-label span{color:#777c77}
+.v98-concept-studio .v45-head{border-top:2px solid #272d29;padding-top:30px;gap:30px}
+.v98-concept-studio .v45-head h2{font-size:clamp(42px,6vw,94px);letter-spacing:-.055em;line-height:.94}
+.v98-concept-studio .v45-layout{gap:clamp(16px,3vw,48px)}
+.v98-concept-studio .v45-rail{background:#222824;color:#fff;border-radius:20px;padding:clamp(16px,2.2vw,30px);box-shadow:0 22px 48px #1d241d22}
+.v98-concept-studio .v45-rail-heading,.v98-concept-studio .v45-rail-footer{color:#e8e1d4}
+.v98-concept-studio .v45-tab{border-color:#ffffff26!important}
+.v98-concept-studio .v45-tab[aria-selected="true"]{outline:2px solid #f0783e;outline-offset:-2px;background:#393d34!important}
+.v98-concept-studio .v45-story{min-width:0}
+.v98-concept-studio .v45-stage{background:#d9d9d0;border:1px solid #b7b8ab;border-radius:22px;overflow:hidden;box-shadow:0 26px 60px #202a2017}
+.v98-concept-studio .v45-stage>img{max-height:410px;object-fit:contain}
+.v98-lens{background:#222824;color:#f7f1e6;padding:22px clamp(18px,3vw,32px);border-top:4px solid #f0783e}
+.v98-lens-top,.v98-lens-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.13em}
+.v98-lens-top strong{color:#f5a16e}
+.v98-lens-buttons{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}
+.v98-lens-buttons button{border:1px solid #ffffff4d;border-radius:999px;background:transparent;color:#fff;padding:10px 16px;font:750 11px system-ui,sans-serif;letter-spacing:.08em;cursor:pointer}
+.v98-lens-buttons button[aria-pressed="true"]{background:#f0783e;color:#1c241f;border-color:#f0783e}
+.v98-lens-buttons button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#v98-lens-note{min-height:3em;font:500 clamp(16px,1.8vw,22px)/1.4 system-ui,sans-serif;margin:12px 0 20px;max-width:620px}
+.v98-lens-bottom{border-top:1px solid #ffffff32;padding-top:14px;color:#c4c9be;flex-wrap:wrap}
+.v98-lens-bottom a{color:#ffa36f;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:750px){.v98-concept-studio .v45-rail{padding:16px}.v98-concept-studio .v45-stage>img{max-height:260px}.v98-lens{padding:18px}.v98-lens-buttons button{padding:10px 12px}.v98-concept-studio .v45-head h2{font-size:clamp(38px,11vw,66px)}}
+@media(max-width:360px){.v98-lens-buttons{gap:5px}.v98-lens-buttons button{font-size:10px;padding:9px}.v98-lens-bottom{font-size:9px}}

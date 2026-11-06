@@ -1,0 +1,50 @@
+/* V54 / Project Location Studio — replaces the existing location-step presentation. */
+#wizard.v54-location-open #wizardContent{padding-top:0;background:#f6eee1}
+#wizard .v54-location-head{background:#203436;color:#fff3e4;margin:0 -35px 25px;padding:24px 29px 27px;position:relative;overflow:hidden;isolation:isolate}
+#wizard .v54-location-head:after{content:"";position:absolute;right:-90px;top:-130px;width:290px;height:290px;border:2px solid #f08a47;border-radius:50%;box-shadow:0 0 0 26px #f08a4724,0 0 0 52px #f08a4715;z-index:-1}
+#wizard .v54-location-head .v54-kicker{font-size:10px;letter-spacing:.19em;font-weight:950;color:#f9ac78}
+#wizard .v54-location-head h3{font-size:clamp(40px,4.8vw,66px);line-height:.92;letter-spacing:-.075em;font-weight:950;margin:12px 0 14px;color:#fff5e7}
+#wizard .v54-location-head h3 em{font-style:normal;color:#ff9c5c}
+#wizard .v54-location-head p{max-width:410px;font-size:12px;line-height:1.6;color:#e2d6c8;margin:0;position:relative;z-index:1}
+#wizard .v54-head-art{position:absolute;right:24px;top:29px;font-size:28px;line-height:1.3;font-weight:950;letter-spacing:.1em;color:#f6a76d7a;text-align:right;transform:rotate(-7deg);pointer-events:none}
+#wizard .v54-location-block{margin-bottom:22px}
+#wizard .v54-block-title{font-size:11px;letter-spacing:.1em;font-weight:950;color:#344849;margin:0 0 11px}
+#wizard .v54-state-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#wizard .v54-state-tile{position:relative;text-align:left;border:1px solid #b7a693;background:#fff9ed;color:#1e3638;padding:13px 14px 12px;min-height:78px;display:grid;grid-template-columns:1fr auto;gap:8px;cursor:pointer;transition:background .18s,border-color .18s}
+#wizard .v54-state-tile:hover{border-color:#dc7b39;background:#fce6d3}
+#wizard .v54-state-tile.is-active{background:#e67e38;border-color:#ae5722;color:#182c2e;box-shadow:inset 0 0 0 2px #e67e38}
+#wizard .v54-tile-index{font-size:10px;letter-spacing:.12em;font-weight:900;grid-column:1/-1;opacity:.75}
+#wizard .v54-tile-name{font-size:17px;font-weight:950;letter-spacing:-.035em;line-height:1.1}
+#wizard .v54-tile-mark{font-size:20px;font-weight:900;line-height:1}
+#wizard .v54-state-tile.is-active .v54-tile-mark{font-size:0}
+#wizard .v54-state-tile.is-active .v54-tile-mark:after{content:'✓';font-size:20px}
+#wizard .v54-property-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#wizard .v54-property-tile{border:1px solid #b9a996;background:#fff9ed;color:#22383b;min-height:85px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:5px;padding:12px;position:relative;cursor:pointer;text-align:left;font-size:11px;font-weight:900}
+#wizard .v54-property-symbol{font-size:27px;line-height:1;color:#b85c2a}
+#wizard .v54-property-check{position:absolute;right:10px;top:9px;opacity:0;font-size:13px}
+#wizard .v54-property-tile.is-active{background:#243b3d;color:#fff5e6;border-color:#243b3d}
+#wizard .v54-property-tile.is-active .v54-property-symbol{color:#f9a66c}
+#wizard .v54-property-tile.is-active .v54-property-check{opacity:1;color:#ffae75}
+#wizard .v54-zip-block{margin-bottom:17px}
+#wizard .v54-zip-row{display:flex;gap:10px;align-items:flex-end}
+#wizard .v54-zip-row .field{flex:1;min-width:0;margin:0}
+#wizard .v54-zip-row .field label{position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
+#wizard .v54-zip-row input{font-size:22px;font-weight:900;letter-spacing:.16em;min-height:56px;width:100%;padding:10px 14px;background:#fffaf1}
+#wizard .v54-zip-clear{background:#243b3d;color:#fff5e6;border:1px solid #243b3d;min-height:56px;padding:10px 12px;font-size:11px;font-weight:900;cursor:pointer}
+#wizard .v54-zip-clear[hidden]{display:none}
+#wizard .v54-zip-help{font-size:11px;line-height:1.5;color:#536865;margin:8px 0 0}
+#wizard .v54-ready{background:#e6d8c6;border-left:4px solid #db7736;padding:15px 17px;margin:0 0 15px}
+#wizard .v54-ready-heading{display:flex;justify-content:space-between;gap:8px;font-size:10px;letter-spacing:.11em;font-weight:950;color:#2b4243}
+#wizard .v54-ready-heading strong{font-size:13px;color:#a45124}
+#wizard .v54-ready-track{height:5px;background:#c7b4a0;margin:10px 0}
+#wizard .v54-ready-track span{display:block;height:100%;background:#dc7734;transition:width .2s}
+#wizard #v54-ready-text{font-size:12px;line-height:1.5;font-weight:850;color:#2c4644;margin:0 0 7px}
+#wizard .v54-site-tip{font-size:11px;line-height:1.55;color:#4a5b58;margin:0}
+#wizard .v54-native{border:1px solid #c4b3a0;background:#fff8eb;margin:0 0 8px}
+#wizard .v54-native summary{cursor:pointer;font-size:11px;font-weight:900;color:#31494a;padding:12px}
+#wizard .v54-native[open]{padding-bottom:12px}
+#wizard .v54-native .field{margin:12px 12px 0}
+#wizard .v54-location-head :focus-visible,#wizard .v54-state-tile:focus-visible,#wizard .v54-property-tile:focus-visible,#wizard .v54-zip-clear:focus-visible,#wizard .v54-native :focus-visible{outline:3px solid #f59c58;outline-offset:3px}
+@media(max-width:780px){#wizard .v54-location-head{margin:0 -18px 22px;padding:23px 19px}#wizard .v54-location-head h3{font-size:clamp(40px,10vw,58px)}#wizard .v54-head-art{font-size:20px;right:12px;top:15px}}
+@media(max-width:360px){#wizard .v54-state-tile{padding:11px;min-height:69px}#wizard .v54-tile-name{font-size:15px}#wizard .v54-property-tile{padding:9px;font-size:10px}#wizard .v54-property-symbol{font-size:23px}#wizard .v54-location-head h3{font-size:38px}}
+@media(prefers-reduced-motion:reduce){#wizard .v54-state-tile,#wizard .v54-ready-track span{transition:none}}

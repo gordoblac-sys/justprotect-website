@@ -1,0 +1,35 @@
+/* V51 — Quiet Project Pulse. Compact, accessible replacement for the oversized dock;
+   existing V42 workspace, modal layering and synchronization are preserved. */
+.v42-dock{left:auto;right:26px;bottom:24px;transform:none;width:min(390px,calc(100% - 40px));filter:drop-shadow(0 12px 22px #050d1090);transition:width .2s ease}
+.v42-dock-shell{border:1px solid #697a75;border-radius:17px;border-left:0;box-shadow:0 10px 36px #0006;background:#162529;overflow:hidden}
+.v42-dock-button{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:12px;min-height:74px;padding:10px 12px 10px 11px;align-items:center}
+.v42-dock-button:hover{background:#25373a}.v42-dock-button:focus-visible{outline:3px solid #ffc89a;outline-offset:-4px}
+.v42-dock-symbol{position:relative;width:44px;height:44px;border-radius:13px;font-size:26px;background:conic-gradient(#f6924b var(--v51-ready,0%),#46585a 0);color:#182326;isolation:isolate}
+.v42-dock-symbol:before{content:'';position:absolute;inset:4px;background:#f5e9d8;border-radius:10px;z-index:-1}
+.v42-dock-copy{gap:2px}.v42-dock-copy b{font-size:9px;color:#f7aa76;letter-spacing:.13em}.v42-dock-copy strong{font-size:15px;line-height:1.25}
+.v51-pulse-note{display:block;color:#d1d9d4;font-size:11px;line-height:1.35;font-weight:500}
+.v42-dock-count{display:none}.v42-dock-cta{background:#f38c43;color:#182326;font-size:10px;padding:11px 12px;border-radius:8px;letter-spacing:.03em}
+.v51-ready-block{margin:0 0 16px;padding:14px 15px;background:#101e21;border:1px solid #536a68;border-radius:12px}
+.v51-ready-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}.v51-ready-top strong{font-size:12px;letter-spacing:.03em;color:#fff0e2}.v51-ready-top span{font-size:11px;color:#f6a66e;font-weight:800}
+.v51-ready-meter{height:6px;border-radius:99px;background:#394c4e;overflow:hidden}.v51-ready-meter>span{display:block;width:var(--v51-progress,0%);height:100%;background:#f08a43;transition:width .2s ease}
+.v51-ready-hint{font-size:12px;color:#c9d7d3;line-height:1.55;margin:10px 0 8px}
+.v51-ready-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.v51-ready-actions button{border:1px solid #7b918d;background:transparent;color:#fff0e3;padding:8px 10px;font-size:11px;font-weight:750;border-radius:6px}
+.v51-ready-actions button:hover{border-color:#f9a96d;color:#ffc18f}.v51-ready-actions button:focus-visible{outline:3px solid #ffc18f;outline-offset:2px}.v51-ready-actions button[hidden]{display:none}
+.v51-ready-actions #v51-clear{margin-left:auto;color:#e4d2c5}.v51-ready-actions #v51-clear:disabled{opacity:.42;cursor:not-allowed}
+.v51-ready-actions #v51-undo{color:#142326;background:#f5aa72;border-color:#f5aa72}
+/* Convert existing V50 guidance to a useful local-only, keyboard-friendly preparation checklist. */
+.v50-concept-focus .v51-prep-intro{font-size:11px;color:#c3cbc9;line-height:1.5;margin:12px 0 8px}
+.v50-concept-focus #v50-notes-list{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.v50-concept-focus #v50-notes-list li{padding:0!important;margin:0!important;border:0!important;list-style:none!important}
+.v51-prep-item{display:flex;align-items:flex-start;gap:10px;background:#172528;border:1px solid #4d5b59;padding:11px 12px;color:#f3ede6;line-height:1.45;font-size:12px;cursor:pointer}
+.v51-prep-item:hover{border-color:#f6a268}.v51-prep-item:focus-within{outline:2px solid #f7b583;outline-offset:2px}
+.v51-prep-item input{flex:none;accent-color:#ff994e;width:17px;height:17px;margin:1px 0 0;cursor:pointer}
+.v51-prep-item:has(input:checked){background:#243a37;border-color:#f3a36a}.v51-prep-item:has(input:checked) span{color:#e4f0e8}
+.v51-prep-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:11px 0 2px;flex-wrap:wrap}
+.v51-prep-footer span{font-size:11px;color:#f5b482;font-weight:750}
+.v51-prep-footer button{background:#f1e5d7;color:#172326;border:0;padding:10px 12px;font-size:11px;font-weight:850;cursor:pointer}
+.v51-prep-footer button:hover{background:#ffb474}.v51-prep-footer button:focus-visible{outline:3px solid #ffb474;outline-offset:3px}
+.v51-prep-feedback{margin:8px 0 0;color:#dfddd4;font-size:11px;min-height:15px;line-height:1.5}
+@media(max-width:600px){.v42-dock{bottom:0;left:0;right:0;width:100%;transform:none;filter:none}.v42-dock-shell{border-radius:0;border:0;border-top:3px solid #f08a43}.v42-dock-button{min-height:61px;grid-template-columns:37px minmax(0,1fr) auto;gap:9px;padding:7px 13px}.v42-dock-symbol{width:35px;height:35px;border-radius:10px;font-size:21px}.v42-dock-symbol:before{inset:3px;border-radius:8px}.v42-dock-copy b{font-size:8px}.v42-dock-copy strong{font-size:13px}.v51-pulse-note{font-size:10px}.v42-dock-cta{font-size:10px;padding:10px 10px}.v51-ready-block{padding:12px}.v51-prep-footer{align-items:stretch}.v51-prep-footer button{width:100%}}
+@media(max-width:340px){.v42-dock-button{grid-template-columns:34px minmax(0,1fr) auto;gap:7px;padding:7px 9px}.v42-dock-cta{padding:9px 7px;font-size:9px}.v42-dock-copy strong{font-size:12px}.v51-pulse-note{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.v42-dock,.v51-ready-meter>span{transition:none!important}}
